@@ -43,8 +43,8 @@ def drawQ_Q(sp):
     # plt.ylabel('Quantile of exponential distribution')
     # plt.show()
 
-drawHist(ws2)
 drawHist(ws3)
+# drawHist(ws3)
 # drawQ_Q(ws2)
 # drawQ_Q(ws3)
 
