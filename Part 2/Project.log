@@ -1,0 +1,307 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  10 MAR 2020 18:08
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Project.tex
+(./Project.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(./Project.aux
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+)
+\openout1 = `Project.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen105
+\scratchbox=\box27
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen106
+\MPnumerator=\count92
+\makeMPintoPDFobject=\count93
+\everyMPtoPDFconversion=\toks16
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+<hist1.png, id=1, 578.16pt x 430.60875pt>
+File: hist1.png Graphic file (type png)
+<use hist1.png>
+Package pdftex.def Info: hist1.png  used on input line 24.
+(pdftex.def)             Requested size: 144.54pt x 107.65192pt.
+<hist2.png, id=3, 578.16pt x 430.60875pt>
+File: hist2.png Graphic file (type png)
+<use hist2.png>
+Package pdftex.def Info: hist2.png  used on input line 32.
+(pdftex.def)             Requested size: 144.54pt x 107.65192pt.
+<hist3.png, id=4, 588.1975pt x 443.6575pt>
+File: hist3.png Graphic file (type png)
+<use hist3.png>
+Package pdftex.def Info: hist3.png  used on input line 40.
+(pdftex.def)             Requested size: 144.54pt x 109.01859pt.
+<hist4.png, id=5, 567.11874pt x 434.62375pt>
+File: hist4.png Graphic file (type png)
+<use hist4.png>
+Package pdftex.def Info: hist4.png  used on input line 48.
+(pdftex.def)             Requested size: 144.54pt x 110.77121pt.
+<hist5.png, id=6, 569.12625pt x 429.605pt>
+File: hist5.png Graphic file (type png)
+<use hist5.png>
+Package pdftex.def Info: hist5.png  used on input line 56.
+(pdftex.def)             Requested size: 144.54pt x 109.10535pt.
+<hist6.png, id=7, 574.145pt x 432.61626pt>
+File: hist6.png Graphic file (type png)
+<use hist6.png>
+Package pdftex.def Info: hist6.png  used on input line 64.
+(pdftex.def)             Requested size: 144.54pt x 108.90633pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 74.
+<cdf1.png, id=8, 568.1225pt x 429.605pt>
+File: cdf1.png Graphic file (type png)
+<use cdf1.png>
+Package pdftex.def Info: cdf1.png  used on input line 78.
+(pdftex.def)             Requested size: 144.54pt x 109.29544pt.
+<cdf2.png, id=9, 571.13374pt x 431.6125pt>
+File: cdf2.png Graphic file (type png)
+<use cdf2.png>
+Package pdftex.def Info: cdf2.png  used on input line 86.
+(pdftex.def)             Requested size: 144.54pt x 109.22661pt.
+<cdf3.png, id=10, 566.115pt x 429.605pt>
+File: cdf3.png Graphic file (type png)
+<use cdf3.png>
+Package pdftex.def Info: cdf3.png  used on input line 94.
+(pdftex.def)             Requested size: 144.54pt x 109.6822pt.
+<cdf4.png, id=11, 586.19pt x 430.60875pt>
+File: cdf4.png Graphic file (type png)
+<use cdf4.png>
+Package pdftex.def Info: cdf4.png  used on input line 103.
+(pdftex.def)             Requested size: 144.54pt x 106.17354pt.
+<cdf5.png, id=12, 565.11125pt x 430.60875pt>
+File: cdf5.png Graphic file (type png)
+<use cdf5.png>
+Package pdftex.def Info: cdf5.png  used on input line 111.
+(pdftex.def)             Requested size: 144.54pt x 110.13557pt.
+<cdf6.png, id=13, 569.12625pt x 426.59375pt>
+File: cdf6.png Graphic file (type png)
+<use cdf6.png>
+Package pdftex.def Info: cdf6.png  used on input line 119.
+(pdftex.def)             Requested size: 144.54pt x 108.34058pt.
+<exp1.png, id=14, 572.1375pt x 440.64626pt>
+File: exp1.png Graphic file (type png)
+<use exp1.png>
+Package pdftex.def Info: exp1.png  used on input line 129.
+(pdftex.def)             Requested size: 144.54pt x 111.31776pt.
+<exp2.png, id=15, 575.14874pt x 440.64626pt>
+File: exp2.png Graphic file (type png)
+<use exp2.png>
+Package pdftex.def Info: exp2.png  used on input line 137.
+(pdftex.def)             Requested size: 144.54pt x 110.73952pt.
+<exp3.png, id=16, 563.10374pt x 431.6125pt>
+File: exp3.png Graphic file (type png)
+<use exp3.png>
+Package pdftex.def Info: exp3.png  used on input line 145.
+(pdftex.def)             Requested size: 144.54pt x 110.78746pt.
+<exp4.png, id=17, 574.145pt x 435.6275pt>
+File: exp4.png Graphic file (type png)
+<use exp4.png>
+Package pdftex.def Info: exp4.png  used on input line 153.
+(pdftex.def)             Requested size: 144.54pt x 109.66437pt.
+<exp5.png, id=18, 576.1525pt x 435.6275pt>
+File: exp5.png Graphic file (type png)
+<use exp5.png>
+Package pdftex.def Info: exp5.png  used on input line 161.
+(pdftex.def)             Requested size: 144.54pt x 109.28549pt.
+<exp6.png, id=19, 563.10374pt x 429.605pt>
+File: exp6.png Graphic file (type png)
+<use exp6.png>
+Package pdftex.def Info: exp6.png  used on input line 169.
+(pdftex.def)             Requested size: 144.54pt x 110.27217pt.
+
+[1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./hist1
+.png>] [2 <./hist2.png> <./hist3.png> <./hist4.png>] [3 <./hist5.png> <./hist6.
+png> <./cdf1.png>] [4 <./cdf2.png> <./cdf3.png> <./cdf4.png>] [5 <./cdf5.png> <
+./cdf6.png> <./exp1.png>] [6 <./exp2.png> <./exp3.png> <./exp4.png>] [7 <./exp5
+.png> <./exp6.png>]
+Overfull \hbox (22.16011pt too wide) in paragraph at lines 197--225
+ [] 
+ []
+
+
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 237--265
+ [] 
+ []
+
+[8] [9]
+Overfull \hbox (37.16016pt too wide) in paragraph at lines 277--305
+ [] 
+ []
+
+
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 319--347
+ [] 
+ []
+
+
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 359--387
+ [] 
+ []
+
+[10] [11] [12] (./Project.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1550 strings out of 492616
+ 22225 string characters out of 6129482
+ 98547 words of memory out of 5000000
+ 5456 multiletter control sequences out of 15000+600000
+ 8064 words of font info for 29 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,10n,25p,572b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Project.pdf (12 pages, 739556 bytes).
+PDF statistics:
+ 136 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+

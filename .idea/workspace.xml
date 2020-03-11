@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1899ee4f-cbad-4932-81e5-a3bd478a0151" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X8hUfXboSjZCW7L16NMsjKEseB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Python.1">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Project" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Simulation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Simulation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.1" />
+        <item itemvalue="Python.Project" />
+        <item itemvalue="Python.Simulation" />
+        <item itemvalue="Python.Simulation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1899ee4f-cbad-4932-81e5-a3bd478a0151" name="Default Changelist" comment="" />
+      <created>1580433646015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580433646015</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="490" y="238" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580433688328">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="490" y="238" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1580433688328" />
+    <state x="673" y="258" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1580772703283">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="673" y="258" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1580772703283" />
+    <state x="485" y="160" key="#xdebugger.evaluate" timestamp="1581039661786">
+      <screen x="4" y="0" width="1436" height="900" />
+    </state>
+    <state x="485" y="160" key="#xdebugger.evaluate/4.0.1436.900@4.0.1436.900" timestamp="1581039661786" />
+    <state width="2023" height="437" key="GridCell.Tab.0.bottom" timestamp="1581117052520">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state width="1415" height="135" key="GridCell.Tab.0.bottom/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
+    <state width="2023" height="437" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052520" />
+    <state width="2023" height="127" key="GridCell.Tab.0.bottom/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298303" />
+    <state width="2023" height="437" key="GridCell.Tab.0.center" timestamp="1581117052519">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state width="1415" height="135" key="GridCell.Tab.0.center/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
+    <state width="2023" height="437" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052519" />
+    <state width="2023" height="127" key="GridCell.Tab.0.center/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
+    <state width="2023" height="437" key="GridCell.Tab.0.left" timestamp="1581117052519">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state width="1415" height="135" key="GridCell.Tab.0.left/4.0.1436.900@4.0.1436.900" timestamp="1581046580840" />
+    <state width="2023" height="437" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052519" />
+    <state width="2023" height="127" key="GridCell.Tab.0.left/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
+    <state width="2023" height="437" key="GridCell.Tab.0.right" timestamp="1581117052519">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state width="1415" height="135" key="GridCell.Tab.0.right/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
+    <state width="2023" height="437" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052519" />
+    <state width="2023" height="127" key="GridCell.Tab.0.right/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
+    <state width="2023" height="437" key="GridCell.Tab.1.bottom" timestamp="1581117052521">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state width="1415" height="327" key="GridCell.Tab.1.bottom/4.0.1436.900@4.0.1436.900" timestamp="1581045635387" />
+    <state width="2023" height="437" key="GridCell.Tab.1.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052521" />
+    <state width="2023" height="437" key="GridCell.Tab.1.center" timestamp="1581117052520">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state width="1415" height="327" key="GridCell.Tab.1.center/4.0.1436.900@4.0.1436.900" timestamp="1581045635387" />
+    <state width="2023" height="437" key="GridCell.Tab.1.center/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052520" />
+    <state width="2023" height="437" key="GridCell.Tab.1.left" timestamp="1581117052520">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state width="1415" height="327" key="GridCell.Tab.1.left/4.0.1436.900@4.0.1436.900" timestamp="1581045635386" />
+    <state width="2023" height="437" key="GridCell.Tab.1.left/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052520" />
+    <state width="2023" height="437" key="GridCell.Tab.1.right" timestamp="1581117052521">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state width="1415" height="327" key="GridCell.Tab.1.right/4.0.1436.900@4.0.1436.900" timestamp="1581045635387" />
+    <state width="2023" height="437" key="GridCell.Tab.1.right/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052521" />
+    <state x="287" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581042376019">
+      <screen x="4" y="0" width="1436" height="900" />
+    </state>
+    <state x="287" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/4.0.1436.900@4.0.1436.900" timestamp="1581042376019" />
+    <state x="387" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1580780887438">
+      <screen x="4" y="0" width="1436" height="900" />
+    </state>
+    <state x="387" y="196" width="670" height="676" key="search.everywhere.popup/4.0.1436.900@4.0.1436.900" timestamp="1580780887438" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project.py</url>
+          <line>150</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="W1.idle_time" />
+        <watch expression="W2.idle_time" />
+        <watch expression="W3.idle_time" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
