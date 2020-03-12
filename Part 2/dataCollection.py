@@ -13,7 +13,6 @@ ws2 = np.loadtxt('ws2.dat')
 ws3 = np.loadtxt('ws3.dat')
 
 
-
 def drawHist(sp):
     plt.hist(sp, int(math.ceil(np.sqrt(len(sp)))))
     plt.xlabel('time(s)')
@@ -42,6 +41,7 @@ def drawQ_Q(sp):
     # plt.xlabel('time(s)')
     # plt.ylabel('Quantile of exponential distribution')
     # plt.show()
+
 
 drawHist(ws3)
 # drawHist(ws3)

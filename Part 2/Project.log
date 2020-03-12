@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 MAR 2020 09:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 MAR 2020 13:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -215,35 +215,15 @@ File: cdf6.png Graphic file (type png)
 <use cdf6.png>
 Package pdftex.def Info: cdf6.png  used on input line 119.
 (pdftex.def)             Requested size: 144.54pt x 108.34058pt.
-<exp1.png, id=14, 572.1375pt x 440.64626pt>
-File: exp1.png Graphic file (type png)
-<use exp1.png>
-Package pdftex.def Info: exp1.png  used on input line 129.
-(pdftex.def)             Requested size: 144.54pt x 111.31776pt.
-<exp2.png, id=15, 575.14874pt x 440.64626pt>
-File: exp2.png Graphic file (type png)
-<use exp2.png>
-Package pdftex.def Info: exp2.png  used on input line 137.
-(pdftex.def)             Requested size: 144.54pt x 110.73952pt.
-<exp3.png, id=16, 563.10374pt x 431.6125pt>
-File: exp3.png Graphic file (type png)
-<use exp3.png>
-Package pdftex.def Info: exp3.png  used on input line 145.
-(pdftex.def)             Requested size: 144.54pt x 110.78746pt.
-<exp4.png, id=17, 574.145pt x 435.6275pt>
-File: exp4.png Graphic file (type png)
-<use exp4.png>
-Package pdftex.def Info: exp4.png  used on input line 153.
-(pdftex.def)             Requested size: 144.54pt x 109.66437pt.
-<exp5.png, id=18, 576.1525pt x 435.6275pt>
+<exp5.png, id=14, 576.1525pt x 435.6275pt>
 File: exp5.png Graphic file (type png)
 <use exp5.png>
-Package pdftex.def Info: exp5.png  used on input line 161.
+Package pdftex.def Info: exp5.png  used on input line 130.
 (pdftex.def)             Requested size: 144.54pt x 109.28549pt.
-<exp6.png, id=19, 563.10374pt x 429.605pt>
+<exp6.png, id=15, 563.10374pt x 429.605pt>
 File: exp6.png Graphic file (type png)
 <use exp6.png>
-Package pdftex.def Info: exp6.png  used on input line 169.
+Package pdftex.def Info: exp6.png  used on input line 138.
 (pdftex.def)             Requested size: 144.54pt x 110.27217pt.
 
 [1
@@ -251,47 +231,46 @@ Package pdftex.def Info: exp6.png  used on input line 169.
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./hist1
 .png>] [2 <./hist2.png> <./hist3.png> <./hist4.png>] [3 <./hist5.png> <./hist6.
 png> <./cdf1.png>] [4 <./cdf2.png> <./cdf3.png> <./cdf4.png>] [5 <./cdf5.png> <
-./cdf6.png> <./exp1.png>] [6 <./exp2.png> <./exp3.png> <./exp4.png>] [7 <./exp5
-.png> <./exp6.png>]
-Overfull \hbox (22.16011pt too wide) in paragraph at lines 197--225
+./cdf6.png> <./exp5.png>]
+Overfull \hbox (22.16011pt too wide) in paragraph at lines 166--194
  [] 
  []
 
 
-Overfull \hbox (32.16014pt too wide) in paragraph at lines 237--265
- [] 
- []
-
-[8] [9]
-Overfull \hbox (37.16016pt too wide) in paragraph at lines 277--305
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 206--234
  [] 
  []
 
 
-Overfull \hbox (32.16014pt too wide) in paragraph at lines 319--347
+Overfull \hbox (37.16016pt too wide) in paragraph at lines 246--274
  [] 
  []
 
 
-Overfull \hbox (32.16014pt too wide) in paragraph at lines 359--387
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 288--316
  [] 
  []
 
-[10] [11]
-Overfull \hbox (32.16014pt too wide) in paragraph at lines 399--427
+[6 <./exp6.png>] [7] [8] [9] [10]
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 328--356
  [] 
  []
 
-[12] [13] (./Project.aux)
+
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 368--396
+ [] 
+ []
+
+[11] [12] [13] (./Project.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1550 strings out of 492616
- 22225 string characters out of 6129482
- 98547 words of memory out of 5000000
- 5456 multiletter control sequences out of 15000+600000
+ 1526 strings out of 492616
+ 21965 string characters out of 6129482
+ 105493 words of memory out of 5000000
+ 5436 multiletter control sequences out of 15000+600000
  8064 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,25p,572b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -309,10 +288,10 @@ live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Project.pdf (13 pages, 741488 bytes).
+Output written on Project.pdf (13 pages, 620688 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

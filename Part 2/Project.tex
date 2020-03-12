@@ -19,6 +19,54 @@
 
 The first thing we need to consider after model translation is data collection. For the supply of components are infinite,  the input I formulate here is \textbf{the output of two inspectors}. There are five channels output of two inspectors and three kinds of components totally. So I extract data from Inspector's inspection time for components. Each data point represents the time of a specific component processed. I identify the distributions of each set of data using histograms. Below is what I draw by using python matplotlib library.
 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=2in]{dataCollection1.png}
+\caption{Data collection of Component1 from Inspector1}
+\label{data1}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=2in]{dataCollection2.png}
+\caption{Data collection of Component2 from Inspector2}
+\label{data1}
+\end{center}
+\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=2in]{dataCollection3.png}
+\caption{Data collection of Component3 from Inspector2}
+\label{data1}
+\end{center}
+\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=2in]{dataCollection4.png}
+\caption{Data collection of Workstation1}
+\label{data1}
+\end{center}
+\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=2in]{dataCollection5.png}
+\caption{Data collection of Workstation2}
+\label{data1}
+\end{center}
+\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=2in]{dataCollection6.png}
+\caption{Data collection of Workstation3}
+\label{data1}
+\end{center}
+\end{figure}
+
+
+
+
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=2in]{hist1.png}
@@ -124,53 +172,6 @@ First let ${\{x_i, i=1,2,...,n\}}$ be sampled data and sort the from the smalles
 Try some different kinds of common distribution and I found exponential distribution fits the most.
 Below I choose exponential distribution as the family.
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=2in]{exp1.png}
-\caption{Q-Q plot of Component1 from Inspector1}
-\label{exp1}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=2in]{exp2.png}
-\caption{Q-Q plot of Component2 from Inspector2}
-\label{exp2}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=2in]{exp3.png}
-\caption{Q-Q plot of Component3 from Inspector2}
-\label{exp3}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=2in]{exp4.png}
-\caption{Q-Q plot of Workstation1}
-\label{exp4}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=2in]{exp5.png}
-\caption{Q-Q plot of Workstation2}
-\label{exp5}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=2in]{exp6.png}
-\caption{Q-Q plot of Workstation3}
-\label{exp6}
-\end{center}
-\end{figure}
 
 \section{Chi-Square Test}
 \subsection{Component1 from Inspector1}
@@ -432,6 +433,7 @@ We have 18 bins and the freedom degree should be 18-1-1=16. Using a significance
 
 \section{Generate the input}
 
+For each inspector and workstation, we choose a model based on that the sampled input. We choose 0.95 significance level for each and make sure  
 
 
 
