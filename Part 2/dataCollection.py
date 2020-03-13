@@ -14,6 +14,7 @@ ws3 = np.loadtxt('ws3.dat')
 
 
 def drawHist(sp):
+    """Draw the histogram of the distribution of data"""
     plt.hist(sp, int(math.ceil(np.sqrt(len(sp)))), density=True)
     plt.xlabel('time(s)')
     plt.ylabel('Frequency')
@@ -27,6 +28,7 @@ def drawHist(sp):
 
 
 def drawCDF(sp):
+    """Draw cumulative distribution function of data"""
     sorted_ = np.sort(sp)
     yvals = (np.arange(len(sorted_))) / float(len(sorted_))
     plt.plot(sorted_, yvals)
@@ -36,6 +38,7 @@ def drawCDF(sp):
 
 
 def drawQ_Q(sp):
+    """Draw Quantile-Quantile plot of exponentional distribution and data"""
     sm.qqplot(sp, dist=stats.expon, line='r')
     pylab.show()
     # sorted_ = np.sort(sp)
@@ -47,19 +50,19 @@ def drawQ_Q(sp):
     # plt.show()
 
 
-def drawSim(sp):
+def drawSim(sp, number):
+    """Random variables generator"""
     m, _ = stats.expon.fit(sp)
-    sample = np.random.exponential(1/m, size=1000)
+    sample = np.random.exponential(1/m, size=number)
     plt.hist(sample, bins=int(math.ceil(np.sqrt(len(sp)))),
              alpha=0.7, normed=True)
-    x = np.arange(0, 100, 0.1)
+    x = np.arange(0, 100, 100.0/number)
     y = m*np.exp(-m*x)
-    plt.plot(x, y)
-    plt.show()
+    return y
 
 
 drawHist(sp1)
-drawSim(sp1)
+RVs = drawSim(sp1, 100)
 # drawHist(ws3)
 # drawHist(ws3)
 # drawQ_Q(ws2)
