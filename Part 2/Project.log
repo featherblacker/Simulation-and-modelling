@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 MAR 2020 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 MAR 2020 13:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -50,23 +50,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(./Project.aux
-
-LaTeX Warning: Label `default' multiply defined.
-
-
-LaTeX Warning: Label `default' multiply defined.
-
-
-LaTeX Warning: Label `default' multiply defined.
-
-
-LaTeX Warning: Label `default' multiply defined.
-
-
-LaTeX Warning: Label `default' multiply defined.
-
-)
+(./Project.aux)
 \openout1 = `Project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -81,7 +65,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
- (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
 \scratchdimen=\dimen105
@@ -151,126 +136,148 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
-<hist1.png, id=1, 578.16pt x 430.60875pt>
+<dataCollection1.png, id=1, 564.1075pt x 432.61626pt>
+File: dataCollection1.png Graphic file (type png)
+<use dataCollection1.png>
+Package pdftex.def Info: dataCollection1.png  used on input line 25.
+(pdftex.def)             Requested size: 144.54pt x 110.84708pt.
+<dataCollection2.png, id=3, 570.13pt x 428.60126pt>
+File: dataCollection2.png Graphic file (type png)
+<use dataCollection2.png>
+Package pdftex.def Info: dataCollection2.png  used on input line 33.
+(pdftex.def)             Requested size: 144.54pt x 108.65422pt.
+<dataCollection3.png, id=4, 565.11125pt x 427.5975pt>
+File: dataCollection3.png Graphic file (type png)
+<use dataCollection3.png>
+Package pdftex.def Info: dataCollection3.png  used on input line 40.
+(pdftex.def)             Requested size: 144.54pt x 109.3654pt.
+<dataCollection4.png, id=5, 555.07375pt x 421.575pt>
+File: dataCollection4.png Graphic file (type png)
+<use dataCollection4.png>
+Package pdftex.def Info: dataCollection4.png  used on input line 47.
+(pdftex.def)             Requested size: 144.54pt x 109.77415pt.
+<dataCollection5.png, id=6, 560.0925pt x 420.57124pt>
+File: dataCollection5.png Graphic file (type png)
+<use dataCollection5.png>
+Package pdftex.def Info: dataCollection5.png  used on input line 54.
+(pdftex.def)             Requested size: 144.54pt x 108.53093pt.
+<dataCollection6.png, id=7, 567.11874pt x 434.62375pt>
+File: dataCollection6.png Graphic file (type png)
+<use dataCollection6.png>
+Package pdftex.def Info: dataCollection6.png  used on input line 61.
+(pdftex.def)             Requested size: 144.54pt x 110.77121pt.
+<hist1.png, id=8, 578.16pt x 430.60875pt>
 File: hist1.png Graphic file (type png)
 <use hist1.png>
-Package pdftex.def Info: hist1.png  used on input line 24.
+Package pdftex.def Info: hist1.png  used on input line 71.
 (pdftex.def)             Requested size: 144.54pt x 107.65192pt.
-<hist2.png, id=3, 578.16pt x 430.60875pt>
+<hist2.png, id=9, 578.16pt x 430.60875pt>
 File: hist2.png Graphic file (type png)
 <use hist2.png>
-Package pdftex.def Info: hist2.png  used on input line 32.
+Package pdftex.def Info: hist2.png  used on input line 79.
 (pdftex.def)             Requested size: 144.54pt x 107.65192pt.
-<hist3.png, id=4, 588.1975pt x 443.6575pt>
+<hist3.png, id=10, 588.1975pt x 443.6575pt>
 File: hist3.png Graphic file (type png)
 <use hist3.png>
-Package pdftex.def Info: hist3.png  used on input line 40.
+Package pdftex.def Info: hist3.png  used on input line 87.
 (pdftex.def)             Requested size: 144.54pt x 109.01859pt.
-<hist4.png, id=5, 567.11874pt x 434.62375pt>
+<hist4.png, id=11, 567.11874pt x 434.62375pt>
 File: hist4.png Graphic file (type png)
 <use hist4.png>
-Package pdftex.def Info: hist4.png  used on input line 48.
+Package pdftex.def Info: hist4.png  used on input line 95.
 (pdftex.def)             Requested size: 144.54pt x 110.77121pt.
-<hist5.png, id=6, 569.12625pt x 429.605pt>
+<hist5.png, id=12, 569.12625pt x 429.605pt>
 File: hist5.png Graphic file (type png)
 <use hist5.png>
-Package pdftex.def Info: hist5.png  used on input line 56.
+Package pdftex.def Info: hist5.png  used on input line 103.
 (pdftex.def)             Requested size: 144.54pt x 109.10535pt.
-<hist6.png, id=7, 574.145pt x 432.61626pt>
+<hist6.png, id=13, 574.145pt x 432.61626pt>
 File: hist6.png Graphic file (type png)
 <use hist6.png>
-Package pdftex.def Info: hist6.png  used on input line 64.
+Package pdftex.def Info: hist6.png  used on input line 111.
 (pdftex.def)             Requested size: 144.54pt x 108.90633pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 74.
+(Font)              <7> on input line 121.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 74.
-<cdf1.png, id=8, 568.1225pt x 429.605pt>
+(Font)              <5> on input line 121.
+<cdf1.png, id=14, 568.1225pt x 429.605pt>
 File: cdf1.png Graphic file (type png)
 <use cdf1.png>
-Package pdftex.def Info: cdf1.png  used on input line 78.
+Package pdftex.def Info: cdf1.png  used on input line 125.
 (pdftex.def)             Requested size: 144.54pt x 109.29544pt.
-<cdf2.png, id=9, 571.13374pt x 431.6125pt>
+<cdf2.png, id=15, 571.13374pt x 431.6125pt>
 File: cdf2.png Graphic file (type png)
 <use cdf2.png>
-Package pdftex.def Info: cdf2.png  used on input line 86.
+Package pdftex.def Info: cdf2.png  used on input line 133.
 (pdftex.def)             Requested size: 144.54pt x 109.22661pt.
-<cdf3.png, id=10, 566.115pt x 429.605pt>
+<cdf3.png, id=16, 566.115pt x 429.605pt>
 File: cdf3.png Graphic file (type png)
 <use cdf3.png>
-Package pdftex.def Info: cdf3.png  used on input line 94.
+Package pdftex.def Info: cdf3.png  used on input line 141.
 (pdftex.def)             Requested size: 144.54pt x 109.6822pt.
-<cdf4.png, id=11, 586.19pt x 430.60875pt>
+<cdf4.png, id=17, 586.19pt x 430.60875pt>
 File: cdf4.png Graphic file (type png)
 <use cdf4.png>
-Package pdftex.def Info: cdf4.png  used on input line 103.
+Package pdftex.def Info: cdf4.png  used on input line 150.
 (pdftex.def)             Requested size: 144.54pt x 106.17354pt.
-<cdf5.png, id=12, 565.11125pt x 430.60875pt>
+<cdf5.png, id=18, 565.11125pt x 430.60875pt>
 File: cdf5.png Graphic file (type png)
 <use cdf5.png>
-Package pdftex.def Info: cdf5.png  used on input line 111.
+Package pdftex.def Info: cdf5.png  used on input line 158.
 (pdftex.def)             Requested size: 144.54pt x 110.13557pt.
-<cdf6.png, id=13, 569.12625pt x 426.59375pt>
+<cdf6.png, id=19, 569.12625pt x 426.59375pt>
 File: cdf6.png Graphic file (type png)
 <use cdf6.png>
-Package pdftex.def Info: cdf6.png  used on input line 119.
+Package pdftex.def Info: cdf6.png  used on input line 166.
 (pdftex.def)             Requested size: 144.54pt x 108.34058pt.
-<exp5.png, id=14, 576.1525pt x 435.6275pt>
-File: exp5.png Graphic file (type png)
-<use exp5.png>
-Package pdftex.def Info: exp5.png  used on input line 130.
-(pdftex.def)             Requested size: 144.54pt x 109.28549pt.
-<exp6.png, id=15, 563.10374pt x 429.605pt>
-File: exp6.png Graphic file (type png)
-<use exp6.png>
-Package pdftex.def Info: exp6.png  used on input line 138.
-(pdftex.def)             Requested size: 144.54pt x 110.27217pt.
 
 [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./hist1
-.png>] [2 <./hist2.png> <./hist3.png> <./hist4.png>] [3 <./hist5.png> <./hist6.
-png> <./cdf1.png>] [4 <./cdf2.png> <./cdf3.png> <./cdf4.png>] [5 <./cdf5.png> <
-./cdf6.png> <./exp5.png>]
-Overfull \hbox (22.16011pt too wide) in paragraph at lines 166--194
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./dataC
+ollection1.png>] [2 <./dataCollection2.png> <./dataCollection3.png> <./dataColl
+ection4.png>] [3 <./dataCollection5.png> <./dataCollection6.png> <./hist1.png>]
+ [4 <./hist2.png> <./hist3.png> <./hist4.png>] [5 <./hist5.png> <./hist6.png> <
+./cdf1.png>] [6 <./cdf2.png> <./cdf3.png> <./cdf4.png>] [7 <./cdf5.png> <./cdf6
+.png>]
+Overfull \hbox (22.16011pt too wide) in paragraph at lines 197--225
  [] 
  []
 
 
-Overfull \hbox (32.16014pt too wide) in paragraph at lines 206--234
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 237--265
+ [] 
+ []
+
+[8]
+Overfull \hbox (37.16016pt too wide) in paragraph at lines 277--305
  [] 
  []
 
 
-Overfull \hbox (37.16016pt too wide) in paragraph at lines 246--274
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 319--347
+ [] 
+ []
+
+[9] [10] [11]
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 359--387
  [] 
  []
 
 
-Overfull \hbox (32.16014pt too wide) in paragraph at lines 288--316
+Overfull \hbox (32.16014pt too wide) in paragraph at lines 399--427
  [] 
  []
 
-[6 <./exp6.png>] [7] [8] [9] [10]
-Overfull \hbox (32.16014pt too wide) in paragraph at lines 328--356
- [] 
- []
+[12] [13] [14] (./Project.aux)
 
-
-Overfull \hbox (32.16014pt too wide) in paragraph at lines 368--396
- [] 
- []
-
-[11] [12] [13] (./Project.aux)
-
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1526 strings out of 492616
- 21965 string characters out of 6129482
- 105493 words of memory out of 5000000
- 5436 multiletter control sequences out of 15000+600000
+ 1544 strings out of 492616
+ 22519 string characters out of 6129482
+ 98346 words of memory out of 5000000
+ 5450 multiletter control sequences out of 15000+600000
  8064 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,25p,572b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -288,10 +295,10 @@ live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Project.pdf (13 pages, 620688 bytes).
+Output written on Project.pdf (14 pages, 687317 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 143 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

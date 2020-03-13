@@ -14,9 +14,13 @@ ws3 = np.loadtxt('ws3.dat')
 
 
 def drawHist(sp):
-    plt.hist(sp, int(math.ceil(np.sqrt(len(sp)))))
+    plt.hist(sp, int(math.ceil(np.sqrt(len(sp)))), density=True)
     plt.xlabel('time(s)')
     plt.ylabel('Frequency')
+    m = np.mean(sp)
+    x = np.arange(0, 100, 0.1)
+    y = 1/m*np.exp(-1/m*x)
+    plt.plot(x, y)
     print(max(sp)/18)
     print("Expectation: "+str(np.mean(sp))+" Variance: "+str(np.var(sp)))
     plt.show()
@@ -43,7 +47,20 @@ def drawQ_Q(sp):
     # plt.show()
 
 
-drawHist(ws3)
+def drawSim(sp):
+    m, _ = stats.expon.fit(sp)
+    sample = np.random.exponential(1/m, size=1000)
+    plt.hist(sample, bins=int(math.ceil(np.sqrt(len(sp)))),
+             alpha=0.7, normed=True)
+    x = np.arange(0, 100, 0.1)
+    y = m*np.exp(-m*x)
+    plt.plot(x, y)
+    plt.show()
+
+
+drawHist(sp1)
+drawSim(sp1)
+# drawHist(ws3)
 # drawHist(ws3)
 # drawQ_Q(ws2)
 # drawQ_Q(ws3)
