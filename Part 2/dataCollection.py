@@ -12,6 +12,7 @@ ws1 = np.loadtxt('ws1.dat')
 ws2 = np.loadtxt('ws2.dat')
 ws3 = np.loadtxt('ws3.dat')
 
+np.random.seed(10)
 
 def drawHist(sp):
     """Draw the histogram of the distribution of data"""
@@ -56,13 +57,15 @@ def drawSim(sp, number):
     sample = np.random.exponential(1/m, size=number)
     plt.hist(sample, bins=int(math.ceil(np.sqrt(len(sp)))),
              alpha=0.7, normed=True)
-    x = np.arange(0, 100, 100.0/number)
+    x = np.arange(0, max(sp), max(sp)/number)
     y = m*np.exp(-m*x)
-    return y
+    plt.plot(x, y)
+    return sample
 
 
 drawHist(sp1)
 RVs = drawSim(sp1, 100)
+print(RVs)
 # drawHist(ws3)
 # drawHist(ws3)
 # drawQ_Q(ws2)

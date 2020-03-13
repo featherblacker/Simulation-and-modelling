@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 MAR 2020 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 MAR 2020 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -50,7 +50,41 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(./Project.aux)
+(./Project.aux
+
+LaTeX Warning: Label `data1' multiply defined.
+
+
+LaTeX Warning: Label `data1' multiply defined.
+
+
+LaTeX Warning: Label `data1' multiply defined.
+
+
+LaTeX Warning: Label `data1' multiply defined.
+
+
+LaTeX Warning: Label `data1' multiply defined.
+
+
+LaTeX Warning: Label `data1' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+)
 \openout1 = `Project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -65,8 +99,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-
-(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
 \scratchdimen=\dimen105
@@ -270,13 +303,13 @@ Overfull \hbox (32.16014pt too wide) in paragraph at lines 399--427
 
 [12] [13] [14] (./Project.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  1544 strings out of 492616
  22519 string characters out of 6129482
- 98346 words of memory out of 5000000
+ 98499 words of memory out of 5000000
  5450 multiletter control sequences out of 15000+600000
  8064 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -295,7 +328,7 @@ live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Project.pdf (14 pages, 687317 bytes).
+Output written on Project.pdf (14 pages, 687583 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
