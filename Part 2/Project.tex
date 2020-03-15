@@ -17,50 +17,17 @@
 
 \section{Data Collection}
 
-The first thing we need to consider after model translation is data collection. For the supply of components are infinite,  the input I formulate here is \textbf{the output of two inspectors}. There are five channels output of two inspectors and three kinds of components totally. So I extract data from Inspector's inspection time for components. Each data point represents the time of a specific component processed. I identify the distributions of each set of data using histograms. Below is what I draw by using python matplotlib library.
-
-
+The first thing we need to consider after model translation is data collection. For the supply of components are infinite,  the input I formulate here is \textbf{the output of two inspectors}. There are five channels output of two inspectors and three kinds of components totally. So I extract data from Inspector's inspection time for components. Each data point represents the time of a specific component processed. I identify the distributions of each set of data using histograms. Below is what I draw by using python matplotlib library. Obviously, the distributions fit the exponential PDF curve well. 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=2in]{dataCollection1.png}
-\caption{Data collection of Component1 from Inspector1}
-\label{data1}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{dataCollection2.png}
-\caption{Data collection of Component2 from Inspector2}
-\label{data1}
-\end{center}
-\end{figure}
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{dataCollection3.png}
-\caption{Data collection of Component3 from Inspector2}
-\label{data1}
-\end{center}
-\end{figure}
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{dataCollection4.png}
-\caption{Data collection of Workstation1}
-\label{data1}
-\end{center}
-\end{figure}
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{dataCollection5.png}
-\caption{Data collection of Workstation2}
-\label{data1}
-\end{center}
-\end{figure}
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{dataCollection6.png}
-\caption{Data collection of Workstation3}
-\label{data1}
+\caption{Data collection of 3 Inspectors and 3 Workstations}
+\label{data}
 \end{center}
 \end{figure}
 
@@ -69,48 +36,13 @@ I choose exponential distribution to do a fitting and it seems good.
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=2in]{hist1.png}
-\caption{Data collection of Component1 from Inspector1}
-\label{data1}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{hist2.png}
-\caption{Data collection of Component2 from Inspector2}
-\label{data2}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{hist3.png}
-\caption{Data collection of Component3 from Inspector2}
-\label{data3}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{hist4.png}
-\caption{Data collection of Workstation1}
-\label{data4}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{hist5.png}
-\caption{Data collection of Workstation2}
-\label{data5}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{hist6.png}
-\caption{Data collection of Workstation3}
-\label{data6}
+\caption{Fitting of normal exponential distribution with distributions of 3 Inspectors and 3 Workstations}
+\label{data2}
 \end{center}
 \end{figure}
 
@@ -123,49 +55,13 @@ First let ${\{x_i, i=1,2,...,n\}}$ be sampled data and sort the from the smalles
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=2in]{cdf1.png}
-\caption{CDF of Component1 from Inspector1}
-\label{cdf1}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{cdf2.png}
-\caption{CDF of Component2 from Inspector2}
-\label{cdf2}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{cdf3.png}
-\caption{CDF of Component3 from Inspector2}
-\label{cdf3}
-\end{center}
-\end{figure}
-
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{cdf4.png}
-\caption{CDF of Workstation1}
-\label{cdf4}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{cdf5.png}
-\caption{CDF of Workstation2}
-\label{cdf5}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
 \includegraphics[width=2in]{cdf6.png}
-\caption{CDF of Workstation3}
-\label{cdf6}
+\caption{CDF of 3 Inspectors and 3 Workstations}
+\label{cdf}
 \end{center}
 \end{figure}
 Try some different kinds of common distribution and I found exponential distribution fits the most.
@@ -196,7 +92,7 @@ We assume that $\hat{\lambda}=\frac{1}{\bar{X}}=0.097$
 \begin{center}
 \begin{tabular}{ccccc}
 \hline
-$x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
+$x_i$ & Class Interval & $Observed\ Frequency$ & $Expected\ Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
 0& [0, 0.4238)&87&100.74&1.87\\
 1& [4.238, 8.476)&79&66.91&2.18\\
 2&[8.476, 12.714)&46&44.44&0.05\\
@@ -236,7 +132,7 @@ We assume that $\hat{\lambda}=\frac{1}{\bar{X}}=0.097$
 \begin{center}
 \begin{tabular}{ccccc}
 \hline
-$x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
+$x_i$ & Class Interval & $Observed\ Frequency$ & $Expected\ Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
 0& [0, 6.357)&87&100.74&1.87\\
 1& [6.357, 12.714)&79&66.91&2.18\\
 2&[12.714, 19.071)&46&44.44&0.05\\
@@ -254,7 +150,7 @@ $x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O
 14&[88.998, 95.355)&0&0.33&0.33\\
 15&[95.355, 101.712)&0&0.22&0.22\\
 16&[101.712, 108.069)&0&0.14&0.14\\
-17&[108.069, 114.426)&1&0.10&8.51\\
+17&[108.069, 114.426]&1&0.10&8.51\\
 18& (114.426, $\infty$)&0&0.19&0.19\\
 \hline
 Total& &300&300&20.08\\
@@ -276,7 +172,7 @@ We assume that $\hat{\lambda}=\frac{1}{\bar{X}}=0.048$
 \begin{center}
 \begin{tabular}{ccccc}
 \hline
-$x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
+$x_i$ & Class Interval & $Observed\ Frequency$ & $Expected\ Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
 0&[0, 5.7788)&70&73.28&0.15\\
 1&[5.7788, 11.5576)&54&55.38&0.03\\
 2&[11.5576, 17.3364)&41&41.85&0.02\\
@@ -294,7 +190,7 @@ $x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O
 14&[80.9032, 86.682)&2&1.45&0.21\\
 15&[86.682, 92.4608)&0&1.10&1.10\\
 16&[92.4608, 98.2396)&0&0.83&0.83\\
-17&[98.2396, 104.0184)&4&0.63&18.15\\
+17&[98.2396, 104.0184]&4&0.63&18.15\\
 18&(104.0184, $\infty$)&0&0.01&0.01\\
 \hline
 Total& &300&300&24.80\\
@@ -318,7 +214,7 @@ We assume that $\hat{\lambda}=\frac{1}{\bar{X}}=0.217$
 \begin{center}
 \begin{tabular}{ccccc}
 \hline
-$x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
+$x_i$ & Class Interval & $Observed\ Frequency$ & $Expected\ Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
 0&[0, 1.6319)&92&89.53&0.07\\
 1&[1.6319, 3.2638)&70&62.81&0.82\\
 2&[3.2638, 4.8957)&41&44.07&0.21\\
@@ -336,7 +232,7 @@ $x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O
 14&[22.8466, 24.4785)&2&0.63&3.01\\
 15&[24.4785, 26.1104)&0&0.44&0.44\\
 16&[26.1104, 27.7423)&1&0.31&1.55\\
-17&[27.7423, 29.3742)&1&0.22&2.84\\
+17&[27.7423, 29.3742]&1&0.22&2.84\\
 18&(29.3742, $\infty$)&0&0.51&0.51\\
 \hline
 Total& &300&300&17.79\\
@@ -358,7 +254,7 @@ We assume that $\hat{\lambda}=\frac{1}{\bar{X}}=0.217$
 \begin{center}
 \begin{tabular}{ccccc}
 \hline
-$x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
+$x_i$ & Class Interval & $Observed\ Frequency$ & $Expecte\ Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
 0&[0, 3.2821)&82&76.85&0.34\\
 1&[3.2821, 6.5642)&59&57.17&0.06\\
 2&[6.5642, 9.8463)&47&42.52&0.47\\
@@ -376,10 +272,10 @@ $x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O
 14&[45.9494, 49.2315)&2&1.22&0.50\\
 15&[49.2315, 52.5136)&5&0.91&18.46\\
 16&[52.5136, 55.7957)&0&0.67&0.67\\
-17&[55.7957, 59.0778)&1&0.50&0.49\\
+17&[55.7957, 59.0778]&1&0.50&0.49\\
 18&(59.0778, $\infty$)&0&1.46&1.46\\
 \hline
-Total& &300&300&34.28\\
+Total& &300&300&24.28\\
 
 \hline
 
@@ -388,7 +284,7 @@ Total& &300&300&34.28\\
 \label{default}
 \end{table}%
 
-We have 18 bins and the freedom degree should be 18-1-1=16. Using a significance level of 0.05 and check the table, we find that $\chi^2_{0.05, 16}=26.3 < 34.28$. So we reject that the input follows exponential distribution.
+We have 18 bins and the freedom degree should be 18-1-1=16. Using a significance level of 0.01 and check the table, we find that $\chi^2_{0.01, 16}=26.3 > 24.28$. So we don't reject that the input follows exponential distribution.
 
 \subsection{Workstation3}
 
@@ -398,7 +294,7 @@ We assume that $\hat{\lambda}=\frac{1}{\bar{X}}=0.217$
 \begin{center}
 \begin{tabular}{ccccc}
 \hline
-$x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
+$x_i$ & Class Interval & $Observed\ Frequency$ & $Expected\ Frequency$ & $\frac{(O_i-E_i)^2}{E_i}$\\
 0&[0, 3.2821)&78&76.84&0.02\\
 1&[3.2821, 6.5642)&73&57.16&4.39\\
 2&[6.5642, 9.8463)&45&42.52&0.14\\
@@ -416,7 +312,7 @@ $x_i$ & Class Interval & $Observed Frequency$ & $Expected Frequency$ & $\frac{(O
 14&[45.9494, 49.2315)&1&1.22&0.04\\
 15&[49.2315, 52.5136)&1&0.91&0.01\\
 16&[52.5136, 55.7957)&0&0.67&0.67\\
-17&[55.7957, 59.0778)&1&0.50&0.49\\
+17&[55.7957, 59.0778]&1&0.50&0.49\\
 18&(59.0778, $\infty$)&0&1.46&0.09\\
 \hline
 Total& &300&300&17.57\\
@@ -433,6 +329,63 @@ We have 18 bins and the freedom degree should be 18-1-1=16. Using a significance
 \section{Generate the input}
 
 For each inspector and workstation, we choose a model based on that the sampled input. We choose 0.95 significance level for each and make sure they can all be presented as the distribution. What I do is generating random numbers first in uniform distribution. Then, I put these random numbers into exponential distribution that they are transferred random variables of time.
+
+\begin{itemize}
+\item Inspection time for C1:
+\begin{equation}
+f(x) = \left\{
+\begin{array}{rl}
+0.0965 e^{-0.0965 e}, x\geq 0\\
+0, x<0
+\end{array}
+\right.
+\end{equation}
+\item Inspection time for C2:
+\begin{equation}
+f(x) = \left\{
+\begin{array}{rl}
+0.0644 e^{-0.0644 e}, x\geq 0\\
+0, x<0
+\end{array}
+\right.
+\end{equation}
+\item Inspection time for C3:
+\begin{equation}
+f(x) = \left\{
+\begin{array}{rl}
+0.0485 e^{-0.0485 e}, x\geq 0\\
+0, x<0
+\end{array}
+\right.
+\end{equation}
+\item Inspection time for W1:
+\begin{equation}
+f(x) = \left\{
+\begin{array}{rl}
+0.217 e^{-0.217 e}, x\geq 0\\
+0, x<0
+\end{array}
+\right.
+\end{equation}
+\item Inspection time for W2:
+\begin{equation}
+f(x) = \left\{
+\begin{array}{rl}
+0.0901 e^{-0.0901 e}, x\geq 0\\
+0, x<0
+\end{array}
+\right.
+\end{equation}
+\item Inspection time for W3:
+\begin{equation}
+f(x) = \left\{
+\begin{array}{rl}
+0.1137 e^{-0.1137 e}, x\geq 0\\
+0, x<0
+\end{array}
+\right.
+\end{equation}
+\end{itemize}
 
 
 
