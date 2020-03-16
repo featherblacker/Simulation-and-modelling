@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41e710e6-ba07-400a-bdc5-3653555ce1ca" name="Default Changelist" comment="" />
+    <list default="true" id="41e710e6-ba07-400a-bdc5-3653555ce1ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/file.template.settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/Python Script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project.aux" beforeDir="false" afterPath="$PROJECT_DIR$/Project.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project.log" beforeDir="false" afterPath="$PROJECT_DIR$/Project.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Project.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Project.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Project.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataCollection.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1YjZq8Ie2syPonxDPIv26FtT2vb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,7 +40,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunManager">
     <configuration name="dataCollection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -91,9 +118,17 @@
     </state>
     <state width="1415" height="238" key="GridCell.Tab.0.right/4.0.1436.900@4.0.1436.900" timestamp="1583462624274" />
     <state width="1415" height="238" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1583472674435" />
+    <state x="186" y="319" key="SettingsEditor" timestamp="1584317373383">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="186" y="319" key="SettingsEditor/4.0.2044.1152@4.0.2044.1152" timestamp="1584317373383" />
     <state x="342" y="145" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583458215624">
       <screen x="4" y="0" width="1436" height="900" />
     </state>
     <state x="342" y="145" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/4.0.1436.900@4.0.1436.900" timestamp="1583458215624" />
+    <state x="691" y="259" key="search.everywhere.popup" timestamp="1584317418602">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="691" y="259" key="search.everywhere.popup/4.0.2044.1152@4.0.2044.1152" timestamp="1584317418602" />
   </component>
 </project>

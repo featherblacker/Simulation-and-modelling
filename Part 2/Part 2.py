@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+# @Time    : 20:10  2020/3/15  2020
+# @Author  : chuqiguang
+# @FileName: Part 2.py.py
+# @Software: PyCharm
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
@@ -15,6 +21,7 @@ ws3 = np.loadtxt('ws3.dat')
 
 np.random.seed(10)
 
+
 def drawHist(sp):
     """Draw the histogram of the distribution of data"""
     plt.hist(sp, 20, density=True)
@@ -22,10 +29,10 @@ def drawHist(sp):
     plt.ylabel('Frequency')
     m = np.mean(sp)
     x = np.arange(0, max(sp), 0.1)
-    y = 1/m*np.exp(-1/m*x)
+    y = 1 / m * np.exp(-1 / m * x)
     plt.plot(x, y)
-    print(max(sp)/18)
-    print("Expectation: "+str(np.mean(sp))+" Variance: "+str(np.var(sp)))
+    print(max(sp) / 18)
+    print("Expectation: " + str(np.mean(sp)) + " Variance: " + str(np.var(sp)))
     plt.show()
 
 
@@ -61,14 +68,14 @@ def generate(sp, number):
     plt.show()
     return sample
 
+
 def divide(sp, num):
-    bins = [0]*num
-    width = math.ceil(max(sp))//num+1
+    bins = [0] * num
+    width = math.ceil(max(sp)) // num + 1
     print(width)
     for item in sp:
-        bins[int(item/width)]+=1
+        bins[int(item / width)] += 1
     return bins
-
 
 
 if __name__ == '__main__':
