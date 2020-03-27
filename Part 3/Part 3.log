@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  26 MAR 2020 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 MAR 2020 12:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -50,7 +50,17 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(./Part 3.aux)
+(./Part 3.aux
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+)
 \openout1 = `"Part 3.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -65,8 +75,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-
-(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
 \scratchdimen=\dimen105
@@ -136,30 +145,60 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
+<Simulationtrace.png, id=1, 403.00563pt x 209.78375pt>
+File: Simulationtrace.png Graphic file (type png)
+<use Simulationtrace.png>
+Package pdftex.def Info: Simulationtrace.png  used on input line 32.
+(pdftex.def)             Requested size: 289.07999pt x 150.48079pt.
+<Flowchartsp.png, id=3, 1196.47pt x 1742.51pt>
+File: Flowchartsp.png Graphic file (type png)
+<use Flowchartsp.png>
+Package pdftex.def Info: Flowchartsp.png  used on input line 40.
+(pdftex.def)             Requested size: 289.07999pt x 421.00275pt.
+<Flowchartbuffer.png, id=4, 799.98875pt x 798.985pt>
+File: Flowchartbuffer.png Graphic file (type png)
+<use Flowchartbuffer.png>
+Package pdftex.def Info: Flowchartbuffer.png  used on input line 48.
+(pdftex.def)             Requested size: 289.07999pt x 288.71942pt.
+<Flowchartws.png, id=5, 882.29625pt x 1015.795pt>
+File: Flowchartws.png Graphic file (type png)
+<use Flowchartws.png>
+Package pdftex.def Info: Flowchartws.png  used on input line 56.
+(pdftex.def)             Requested size: 289.07999pt x 332.81093pt.
 
 [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Part 3.aux) ) 
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Simul
+ationtrace.png>] [2 <./Flowchartsp.png>] [3 <./Flowchartbuffer.png>] [4 <./Flow
+chartws.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 78.
+ [5] (./Part 3.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1438 strings out of 492616
- 20971 string characters out of 6129482
- 82346 words of memory out of 5000000
- 5363 multiletter control sequences out of 15000+600000
+ 1462 strings out of 492616
+ 21428 string characters out of 6129482
+ 85393 words of memory out of 5000000
+ 5382 multiletter control sequences out of 15000+600000
  8064 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,275b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-12.pfb>
-Output written on "Part 3.pdf" (1 page, 64668 bytes).
+ 41i,6n,25p,540b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "Part 3.pdf" (5 pages, 446344 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

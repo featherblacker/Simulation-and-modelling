@@ -20,6 +20,7 @@ ws2 = np.loadtxt('ws2.dat')
 ws3 = np.loadtxt('ws3.dat')
 
 np.random.seed(10)
+print(np.mean(sp1))
 
 
 def drawHist(sp):
@@ -59,13 +60,18 @@ def drawQ_Q(sp):
     # plt.show()
 
 
-def generate(sp, number):
+def generate(sp, number, name):
     """Random variables generator"""
     m = np.mean(sp)
     sample = np.random.exponential(m, size=number)
+    stack = []
+    for item in sample:
+        stack.append('{:.2f}'.format(item))
+    with open("{}.txt".format(name), 'w') as file:
+        file.write(" ".join(stack))
     plt.hist(sample, bins=int(math.ceil(np.sqrt(len(sp)))),
              alpha=0.7)
-    plt.show()
+    # plt.show()
     return sample
 
 
@@ -78,7 +84,7 @@ def divide(sp, num):
     return bins
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # drawHist(sp1)
     # drawHist(sp2)
     # drawHist(sp3)
@@ -97,12 +103,14 @@ if __name__ == '__main__':
     # drawQ_Q(ws1)
     # drawQ_Q(ws2)
     # drawQ_Q(ws3)
-    generate(sp1, 300)
-    generate(sp2, 300)
-    generate(sp3, 300)
-    generate(ws1, 300)
-    generate(ws2, 300)
-    generate(ws3, 300)
+    # generate(ws3, 300, 'ws3')
+    # generate(ws2, 300, 'ws2')
+    # generate(ws1, 300, 'ws1')
+    # generate(sp3, 300, 'sp3')
+    # generate(sp2, 300, 'sp2')
+    # generate(sp1, 300, 'sp1')
+
+
     # print(divide(ws1, 20))
 
     # RVs = drawSim(sp1, 100)
