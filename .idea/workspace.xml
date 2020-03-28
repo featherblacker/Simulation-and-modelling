@@ -39,7 +39,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
   </component>
-  <component name="RunManager" selected="Python.1">
+  <component name="RunManager" selected="Python.Project (1)">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -53,6 +53,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Project (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Part 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part 3/Project.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,6 +147,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Project (1)" />
         <item itemvalue="Python.1" />
         <item itemvalue="Python.Project" />
         <item itemvalue="Python.Simulation" />
@@ -156,7 +178,30 @@
       <option name="presentableId" value="Default" />
       <updated>1580433646015</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;modify&quot;">
+      <created>1585365764816</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585365764816</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;modify&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;modify&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="238" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580433688328">
@@ -171,29 +216,37 @@
       <screen x="4" y="0" width="1436" height="900" />
     </state>
     <state x="485" y="160" key="#xdebugger.evaluate/4.0.1436.900@4.0.1436.900" timestamp="1581039661786" />
-    <state width="2023" height="437" key="GridCell.Tab.0.bottom" timestamp="1581117052520">
+    <state x="606" y="176" key="CommitChangelistDialog2" timestamp="1585365764285">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="606" y="176" key="CommitChangelistDialog2/4.0.2044.1152@4.0.2044.1152" timestamp="1585365764285" />
+    <state x="104" y="100" width="1844" height="952" key="DiffContextDialog" timestamp="1585366857793">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="104" y="100" width="1844" height="952" key="DiffContextDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1585366857793" />
+    <state width="2023" height="135" key="GridCell.Tab.0.bottom" timestamp="1585371428860">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="1415" height="135" key="GridCell.Tab.0.bottom/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2023" height="437" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052520" />
+    <state width="2023" height="135" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1585371428860" />
     <state width="2023" height="127" key="GridCell.Tab.0.bottom/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298303" />
-    <state width="2023" height="437" key="GridCell.Tab.0.center" timestamp="1581117052519">
+    <state width="2023" height="135" key="GridCell.Tab.0.center" timestamp="1585371428860">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="1415" height="135" key="GridCell.Tab.0.center/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2023" height="437" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052519" />
+    <state width="2023" height="135" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1585371428860" />
     <state width="2023" height="127" key="GridCell.Tab.0.center/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2023" height="437" key="GridCell.Tab.0.left" timestamp="1581117052519">
+    <state width="2023" height="135" key="GridCell.Tab.0.left" timestamp="1585371428859">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="1415" height="135" key="GridCell.Tab.0.left/4.0.1436.900@4.0.1436.900" timestamp="1581046580840" />
-    <state width="2023" height="437" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052519" />
+    <state width="2023" height="135" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1585371428859" />
     <state width="2023" height="127" key="GridCell.Tab.0.left/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2023" height="437" key="GridCell.Tab.0.right" timestamp="1581117052519">
+    <state width="2023" height="135" key="GridCell.Tab.0.right" timestamp="1585371428860">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="1415" height="135" key="GridCell.Tab.0.right/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2023" height="437" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052519" />
+    <state width="2023" height="135" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1585371428860" />
     <state width="2023" height="127" key="GridCell.Tab.0.right/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
     <state width="2023" height="437" key="GridCell.Tab.1.bottom" timestamp="1581117052521">
       <screen x="4" y="0" width="2044" height="1152" />
@@ -219,6 +272,10 @@
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state x="535" y="215" key="SettingsEditor/4.0.2044.1152@4.0.2044.1152" timestamp="1585365585469" />
+    <state x="747" y="317" key="VcsDiffUtil.ChangesDialog" timestamp="1585366817056">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="747" y="317" key="VcsDiffUtil.ChangesDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1585366817056" />
     <state x="287" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581042376019">
       <screen x="4" y="0" width="1436" height="900" />
     </state>
