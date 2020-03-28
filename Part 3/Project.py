@@ -38,10 +38,8 @@ class Workstation1:
 
     def generate(self):
         """Generate one time needed to finish a product"""
-        m = self.number
-        if self.number + 1 < len(self.ws):
-            self.number += 1
-        return self.ws[m]
+        self.number += 1 if self.number + 1 < len(self.ws) else 0
+        return self.ws[self.number-1]
 
     def canWork(self):
         """If the Workstation can work now"""
@@ -64,19 +62,15 @@ class Inspector2:
 
     def generate22(self):
         """Generate one time needed to inspect a component C2"""
-        m = self.number22
-        if self.number22 + 1 <= len(self.sp22):
-            self.number22 += 1
+        self.number22 += 1 if self.number22 + 1 <= len(self.sp22) else 0
         self.which = True
-        return self.sp22[m]
+        return self.sp22[self.number22-1]
 
     def generate23(self):
         """Generate one time needed to inspect a component C3"""
-        m = self.number23
-        if self.number23 + 1 <= len(self.sp23):
-            self.number23 += 1
+        self.number23 += 1 if self.number23 + 1 <= len(self.sp23) else 0
         self.which = False
-        return self.sp23[m]
+        return self.sp23[self.number23-1]
 
     def whichtosend(self, W1, W2, W3):
         """Decide which Workstation to send"""
@@ -99,10 +93,10 @@ class Workstation2:
 
     def generate(self):
         """Generate one time needed to finish a product P2"""
-        m = self.number
-        if self.number + 1 < len(self.ws):
-            self.number += 1
-        return self.ws[m]
+        self.number += 1 if self.number + 1 < len(self.ws) else 0
+        self.buffer["C1"] -= 1
+        self.buffer["C2"] -= 1
+        return self.ws[self.number-1]
 
     def canWork(self):
         """If the Workstation can work now"""

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1899ee4f-cbad-4932-81e5-a3bd478a0151" name="Default Changelist" comment="" />
+    <list default="true" id="1899ee4f-cbad-4932-81e5-a3bd478a0151" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part 3/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Project.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:featherblacker/Simulation-and-modelling.git" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1X8hUfXboSjZCW7L16NMsjKEseB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,7 +35,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
   </component>
   <component name="RunManager" selected="Python.1">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -200,6 +215,10 @@
     </state>
     <state width="1415" height="327" key="GridCell.Tab.1.right/4.0.1436.900@4.0.1436.900" timestamp="1581045635387" />
     <state width="2023" height="437" key="GridCell.Tab.1.right/4.0.2044.1152@4.0.2044.1152" timestamp="1581117052521" />
+    <state x="535" y="215" key="SettingsEditor" timestamp="1585365585469">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="535" y="215" key="SettingsEditor/4.0.2044.1152@4.0.2044.1152" timestamp="1585365585469" />
     <state x="287" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581042376019">
       <screen x="4" y="0" width="1436" height="900" />
     </state>
