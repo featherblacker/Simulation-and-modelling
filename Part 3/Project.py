@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 np.random.seed(0)
 
@@ -35,6 +36,7 @@ class Workstation1:
         self.isWorking = False  # if the workstation is in working condition
         self.idle_time = 0
         self.start_idle = 0
+        self.__name__ = 'W1'
 
     def generate(self):
         """Generate one time needed to finish a product"""
@@ -92,6 +94,7 @@ class Workstation2:
         self.isWorking = False
         self.idle_time = 0
         self.start_idle = 0
+        self.__name__ = 'W2'
 
     def generate(self):
         """Generate one time needed to finish a product P2"""
@@ -115,6 +118,7 @@ class Workstation3:
         self.isWorking = False
         self.idle_time = 0
         self.start_idle = 0
+        self.__name__ = 'W3'
 
     def generate(self):
         """Generate one time needed to finish a product P3"""
@@ -139,6 +143,8 @@ if __name__ == '__main__':
     idle_start = 0
     idle_end = 0
 
+    Buffer = []
+
     event_list = [[World_time + I1.generate(), I1.whichtosend(W1, W2, W3), I1.component(), 'receive'],
                   [World_time + I2.generate(), I2.whichtosend(W1, W2, W3), I2.component(), 'receive']]
     # format: [time, objective, component, activity]
@@ -155,9 +161,12 @@ if __name__ == '__main__':
             if event[1].buffer[event[2]] <= 1:
                 # if the buffer has room to admit the component
                 event[1].buffer[event[2]] += 1
+                Buffer.append([World_time, event[1].buffer[event[2]], event[1].__name__ + '_' + event[2]])
                 if not event[1].isWorking and event[1].canWork():
                     # the work station has ingredients to produce
-                    event_list.append([World_time + event[1].generate(), event[1], '', 'output'])
+                    time = World_time + event[1].generate()
+                    event_list.append([time, event[1], '', 'output'])
+                    Buffer.append([time, event[1].buffer[event[2]], event[1].__name__ + '_' + event[2]])
                     event[1].idle_time += World_time - event[1].start_idle
                 if generator == I1 and generator.number >= 300:
                     continue
@@ -185,3 +194,11 @@ if __name__ == '__main__':
                 event[1].idle_time += World_time - event[1].start_idle
 
     print(World_time, W1.number, W2.number, W3.number, W1.idle_time, W2.idle_time, W3.idle_time)
+
+    res = [buffer for buffer in Buffer if buffer[-1] == 'W1_C1']
+    res.sort()
+    x = [a[0] for a in res]
+    y = [a[1] for a in res]
+    plt.plot(x, y)
+    print(len(res))
+    plt.show()
