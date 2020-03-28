@@ -10,11 +10,9 @@ class Inspector1:
         self.number = 0
 
     def generate(self):
-        """Generate one time needed to inspect a component C1"""
-        m = self.number
-        if self.number + 1 < len(self.sp):
-            self.number += 1
-        return self.sp[m]
+        """Generate one time needed to inspect a component C1"""     
+        self.number += 1 if self.number + 1 <= len(self.sp) else 0
+        return self.sp[self.number-1]
 
     def whichtosend(self, W1, W2, W3):
         """Decide which workstation to send the component"""
@@ -67,7 +65,7 @@ class Inspector2:
     def generate22(self):
         """Generate one time needed to inspect a component C2"""
         m = self.number22
-        if self.number22 + 1 < len(self.sp22):
+        if self.number22 + 1 <= len(self.sp22):
             self.number22 += 1
         self.which = True
         return self.sp22[m]
@@ -75,7 +73,7 @@ class Inspector2:
     def generate23(self):
         """Generate one time needed to inspect a component C3"""
         m = self.number23
-        if self.number23 + 1 < len(self.sp23):
+        if self.number23 + 1 <= len(self.sp23):
             self.number23 += 1
         self.which = False
         return self.sp23[m]
