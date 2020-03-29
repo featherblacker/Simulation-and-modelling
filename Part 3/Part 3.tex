@@ -80,12 +80,56 @@ For each queue system in this project, we do a Little's law verification.
 \end{equation}
 $\hat L$ means average number of components in the queue. $\hat \lambda$ means the arrival rate of components. $\hat w$ means average working time for each component.
 
-For Inspector system, consider the supply of the component for each inspector is sufficient, which means theres always a component waiting outside and there's always existing one component in each inspector. It's easy to calculate that the average dealing time for each inspector but things are little different here. If the corresponding workstation has a full buffer already and can't hold more components, the component must stay in the inspector and the inspector stop receiving new components. Here we have $L=\hat L =1, \hat w = 10.36, \hat \lambda = 0.10$. It follows Little's law.
+For Inspector system, consider the supply of the component for each inspector is sufficient, which means theres always a component waiting outside and there's always existing one component in each inspector. It's easy to calculate that the average dealing time for each inspector but things are little different here. If the corresponding workstation has a full buffer already and can't hold more components, the component must stay in the inspector and the inspector stop receiving new components. Here we have $L=\hat L =1, \hat w = 10.36, \hat \lambda = 0.10$. It follows Little's law. By checking to see if these averages are in range, we can verify quickly if the system is wrong before we even look at any other part of the simulation.
+Here we have the number of each component in each buffer of the specific workstation.
 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=4in]{W1_C1B.png}
+\caption{The number of components in Component 1 buffer of Workstation 1}
+\label{W1_C1B}
+\end{center}
+\end{figure}
 
+The x axle on the diagram shows the time line of the whole process of production, while the y axle indicates how many kind of this components in the buffer at this time. I also draw a red mean line to denote the average number of gears in buffer in this period. 
+
+Verification: $L = 0.286, \lambda = 0.06, w = 5.19$
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=4in]{W2_C1B.png}
+\caption{The number of components in Component 1 buffer of Workstation 2}
+\label{W2_C1B}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=4in]{W2_C2B.png}
+\caption{The number of components in Component 2 buffer of Workstation 2}
+\label{W2_C2B}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=4in]{W3_C1B.png}
+\caption{The number of components in Component 1 buffer of Workstation 3}
+\label{W3_C1B}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=4in]{W3_C3B.png}
+\caption{The number of components in Component 3 buffer of Workstation 3}
+\label{W3_C3B}
+\end{center}
+\end{figure}
 
 
 \subsection{Validation}
+
 \subsection{Face Validity}
 
 
