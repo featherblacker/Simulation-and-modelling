@@ -132,6 +132,24 @@ class Workstation3:
         """If the work station can work now"""
         return self.buffer["C1"] > 0 and self.buffer["C3"] > 0
 
+def queue_diagram(Buffer, name):
+    res = [buffer for buffer in Buffer if buffer[-1] == name]
+
+    res.sort()
+    x = [a[0] for a in res]
+    y = [a[1] for a in res]
+
+    total = 0
+    for i in range(len(x)-1):
+        total+=(x[i+1]-x[i])*y[i]
+
+    average = [total/x[-1] for _ in range(len(x))]
+
+    plt.step(x, y, where='post')
+    plt.plot(x, average, 'r')
+    print(len(res))
+    plt.show()
+
 
 if __name__ == '__main__':
     World_time = 0
@@ -197,20 +215,6 @@ if __name__ == '__main__':
                 event[1].idle_time += World_time - event[1].start_idle
 
     print(World_time, W1.number, W2.number, W3.number, W1.idle_time, W2.idle_time, W3.idle_time)
+    queue_diagram(Buffer, 'W1_C1')
 
-    res = [buffer for buffer in Buffer if buffer[-1] == 'W3_C1']
 
-    res.sort()
-    x = [a[0] for a in res]
-    y = [a[1] for a in res]
-
-    total = 0
-    for i in range(len(x)-1):
-        total+=(x[i+1]-x[i])*y[i]
-
-    average = [total/x[-1] for _ in range(len(x))]
-
-    plt.step(x, y, where='post')
-    plt.plot(x, average, 'r')
-    print(len(res))
-    plt.show()
