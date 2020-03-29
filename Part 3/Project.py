@@ -145,12 +145,12 @@ def queue_diagram(Buffer, name):
         total += (x[i + 1] - x[i]) * y[i]
 
     average = [total / x[-1] for _ in range(len(x))]
-    print(average[0], 189 / x[-1], total / 189)
+    print(average[0], len(res) / x[-1], total / len(res))
 
     plt.step(x, y, where='post')
     plt.plot(x, average, 'r')
     print(len(res))
-    # plt.show()
+    plt.show()
 
 
 if __name__ == '__main__':
@@ -217,5 +217,4 @@ if __name__ == '__main__':
                 event[1].idleTime += worldTime - event[1].startIdle
 
     print(worldTime, W1.number, W2.number, W3.number, W1.idleTime, W2.idleTime, W3.idleTime)
-    print(np.mean(W1.ws))
-    queue_diagram(Buffer, 'W1_C1')
+    queue_diagram(Buffer, 'W3_C3')

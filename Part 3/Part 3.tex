@@ -93,7 +93,14 @@ Here we have the number of each component in each buffer of the specific worksta
 
 The x axle on the diagram shows the time line of the whole process of production, while the y axle indicates how many kind of this components in the buffer at this time. I also draw a red mean line to denote the average number of gears in buffer in this period. 
 
-Verification: $L = 0.286, \lambda = 0.06, w = 5.19$
+Component 1 buffer of Workstation 1:
+
+Verification: $L = 0.286, \lambda = 0.06, w = 4.723, T = 3135.49, N = 189$
+\begin{equation}
+\lambda w = 0.06*4.723 = 0.283 \approx 0.286 = L
+\end{equation}
+
+A little error is acceptable because the formulation is under the condition that $T \rightarrow \infty, N \rightarrow \infty$. This queue pass the Little's law verification.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -103,6 +110,15 @@ Verification: $L = 0.286, \lambda = 0.06, w = 5.19$
 \end{center}
 \end{figure}
 
+Component 1 buffer of Workstation 2:
+
+Verification: $L = 0.664, \lambda = 0.02, w = 28.034, T = 3135.49, N = 36$
+\begin{equation}
+\lambda w = 0.02*28.034 = 0.561 \approx 0.664 = L
+\end{equation}
+
+This queue pass the Little's law verification.
+
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=4in]{W2_C2B.png}
@@ -110,6 +126,15 @@ Verification: $L = 0.286, \lambda = 0.06, w = 5.19$
 \label{W2_C2B}
 \end{center}
 \end{figure}
+
+Component 2 buffer of Workstation 2:
+
+Verification: $L = 1.037, \lambda = 0.02, w = 49.413, T = 3135.49, N = 33$
+\begin{equation}
+\lambda w = 0.02*49.413 = 0.988 \approx 1.037 = L
+\end{equation}
+
+This queue pass the Little's law verification.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -119,6 +144,15 @@ Verification: $L = 0.286, \lambda = 0.06, w = 5.19$
 \end{center}
 \end{figure}
 
+Component 1 buffer of Workstation 3:
+
+Verification: $L = 0.105, \lambda = 0.023, w = 4.598, T = 3135.49, N = 35$
+\begin{equation}
+\lambda w = 0.023*4.598 = 0.106 \approx 0.105 = L
+\end{equation}
+
+This queue pass the Little's law verification.
+
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=4in]{W3_C3B.png}
@@ -127,11 +161,39 @@ Verification: $L = 0.286, \lambda = 0.06, w = 5.19$
 \end{center}
 \end{figure}
 
+Component 3 buffer of Workstation 3:
+
+Verification: $L = 1.903, \lambda = 0.013, w = 145.029, T = 3135.49, N = 20$
+\begin{equation}
+\lambda w = 0.013*145.029 = 1.885 \approx 1.903 = L
+\end{equation}
+
+This queue pass the Little's law verification.
+
+So, all queues of this model pass the Little's law verification.
 
 \subsection{Validation}
 
-\subsection{Face Validity}
+Validation Process
 
+Step 1: Build a model that has high face validity
+
+Step 2: Validate model assumptions
+
+Step 3: Validate input-output transformations
+
+\subsubsection{Face Validity}
+
+The model appears reasonable. Potential users and knowledgeable people can also evaluate model output for reasonableness and can aid in identifying model deficiencies. The model is able to reflect the reality queuing systems that have events like arrival, output and block. Inspectors distribute components to correct workstations while each station prepares a buffer for each component they receive. Each buffer can temporarily store 2 components at most and it would close itself after that. The workstation gets all components it needs to produce, it takes out one component from its buffer and starts working. This model can deal with what the real scenario describes and it appears reasonable, which means I reckon it passes the face validity. 
+
+
+\subsubsection{Model Assumptions}
+
+Model assumption consists of two parts: structure assumption and data assumption. About the data assumption we have mentioned that in the last deliverable that the data we simulate comes from the data points generator, which is validated as that can produce similar data points to reality recorded samples. Now that the generator passes Chi-square validation, we can use it to generate experiment data for us and these points are representative. For the structure part, I used Python language to build a system as 
+
+\subsubsection{Input-Output Transformation}
+
+\section{Production Runs and Analysis}
 
 
 
