@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1899ee4f-cbad-4932-81e5-a3bd478a0151" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Part 3/W1_C1B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 3/W2_C1B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 3/W2_C2B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 3/W3_C1B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 3/W3_C3B.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 3/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Project.py" afterDir="false" />
     </list>
@@ -28,12 +33,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1X8hUfXboSjZCW7L16NMsjKEseB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -145,12 +154,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Part 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part 3/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Project (1)" />
-        <item itemvalue="Python.1" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.Project" />
-        <item itemvalue="Python.Simulation" />
+        <item itemvalue="Python.1" />
         <item itemvalue="Python.Simulation" />
       </list>
     </recent_temporary>
@@ -193,13 +223,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="&quot;modify&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;modify&quot;" />
   </component>
@@ -224,29 +257,33 @@
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state x="104" y="100" width="1844" height="952" key="DiffContextDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1585366857793" />
-    <state width="2023" height="135" key="GridCell.Tab.0.bottom" timestamp="1585399696100">
+    <state width="2023" height="135" key="GridCell.Tab.0.bottom" timestamp="1585489808097">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
+    <state width="2023" height="135" key="GridCell.Tab.0.bottom/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559794" />
     <state width="1415" height="135" key="GridCell.Tab.0.bottom/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2023" height="135" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1585399696100" />
+    <state width="2023" height="135" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1585489808097" />
     <state width="2023" height="127" key="GridCell.Tab.0.bottom/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298303" />
-    <state width="2023" height="135" key="GridCell.Tab.0.center" timestamp="1585399696099">
+    <state width="2023" height="135" key="GridCell.Tab.0.center" timestamp="1585489808096">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
+    <state width="2023" height="135" key="GridCell.Tab.0.center/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559793" />
     <state width="1415" height="135" key="GridCell.Tab.0.center/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2023" height="135" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1585399696099" />
+    <state width="2023" height="135" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1585489808096" />
     <state width="2023" height="127" key="GridCell.Tab.0.center/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2023" height="135" key="GridCell.Tab.0.left" timestamp="1585399696099">
+    <state width="2023" height="135" key="GridCell.Tab.0.left" timestamp="1585489808096">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
+    <state width="2023" height="135" key="GridCell.Tab.0.left/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559792" />
     <state width="1415" height="135" key="GridCell.Tab.0.left/4.0.1436.900@4.0.1436.900" timestamp="1581046580840" />
-    <state width="2023" height="135" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1585399696099" />
+    <state width="2023" height="135" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1585489808096" />
     <state width="2023" height="127" key="GridCell.Tab.0.left/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2023" height="135" key="GridCell.Tab.0.right" timestamp="1585399696100">
+    <state width="2023" height="135" key="GridCell.Tab.0.right" timestamp="1585489808097">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
+    <state width="2023" height="135" key="GridCell.Tab.0.right/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559794" />
     <state width="1415" height="135" key="GridCell.Tab.0.right/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2023" height="135" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1585399696100" />
+    <state width="2023" height="135" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1585489808097" />
     <state width="2023" height="127" key="GridCell.Tab.0.right/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
     <state width="2023" height="437" key="GridCell.Tab.1.bottom" timestamp="1581117052521">
       <screen x="4" y="0" width="2044" height="1152" />

@@ -143,7 +143,10 @@ if __name__ == '__main__':
     idle_start = 0
     idle_end = 0
 
-    Buffer = []
+    Buffer = [[0, W1.buffer['C1'], 'W1_C1'], [0, W2.buffer['C1'], 'W2_C1'],
+              [0, W2.buffer['C2'], 'W2_C2'], [0, W3.buffer['C1'], 'W3_C1'],
+              [0, W3.buffer['C3'], 'W3_C3']]
+    # Buffer = [World_time, which_buffer, buffer_name]
 
     event_list = [[World_time + I1.generate(), I1.whichtosend(W1, W2, W3), I1.component(), 'receive'],
                   [World_time + I2.generate(), I2.whichtosend(W1, W2, W3), I2.component(), 'receive']]
@@ -195,10 +198,19 @@ if __name__ == '__main__':
 
     print(World_time, W1.number, W2.number, W3.number, W1.idle_time, W2.idle_time, W3.idle_time)
 
-    res = [buffer for buffer in Buffer if buffer[-1] == 'W1_C1']
+    res = [buffer for buffer in Buffer if buffer[-1] == 'W3_C1']
+
     res.sort()
     x = [a[0] for a in res]
     y = [a[1] for a in res]
-    plt.plot(x, y)
+
+    total = 0
+    for i in range(len(x)-1):
+        total+=(x[i+1]-x[i])*y[i]
+
+    average = [total/x[-1] for _ in range(len(x))]
+
+    plt.step(x, y, where='post')
+    plt.plot(x, average, 'r')
     print(len(res))
     plt.show()
