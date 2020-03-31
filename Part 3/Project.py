@@ -37,17 +37,50 @@ class Workstation1:
         self.isWorking = False  # if the workstation is in working condition
         self.idleTime = 0
         self.startIdle = 0
+        self.bufferRecord = [[0, 0, 'C1']]
 
     def generate(self):
         """Generate one time needed to finish a product"""
         self.number += 1 if self.number + 1 < len(self.ws) else 0
-        self.buffer['C1'] -= 1
-        self.isWorking = True
         return self.ws[self.number - 1]
 
     def canWork(self):
         """If the Workstation can work now"""
         return self.buffer["C1"] > 0
+
+    def bufferChange(self, time, change, component='C1'):
+        if change == "add":
+            self.buffer[component] += 1
+            self.bufferRecord.append([time, self.buffer[component], component])
+        else:
+            for item in self.buffer:
+                self.buffer[item] -= 1
+                self.bufferRecord.append([time, self.buffer[item], item])
+
+    def plot(self, component='C1'):
+        result = self.bufferRecord
+        result.sort()
+        res = []
+        i = 0
+        while i < len(result) - 1:
+            if result[i][0] == result[i + 1][0]:
+                i += 2
+                continue
+            res.append(result[i])
+            i += 1
+
+        x = [a[0] for a in res]
+        y = [a[1] for a in res]
+        total = 0
+        for i in range(len(x) - 1):
+            total += (x[i + 1] - x[i]) * y[i]
+
+        average = [total / x[-1] for _ in range(len(x))]
+        print(average[0], len(res) / x[-1], total / len(res))
+
+        plt.step(x, y, where='post')
+        plt.hlines(average[0], x[0], x[-1], 'r')
+        print(len(res))
 
 
 class Inspector2:
@@ -95,18 +128,53 @@ class Workstation2:
         self.isWorking = False
         self.idleTime = 0
         self.startIdle = 0
+        self.bufferRecord = [[0, 0, 'C1'], [0, 0, 'C2']]
 
     def generate(self):
         """Generate one time needed to finish a product P2"""
         self.number += 1 if self.number + 1 < len(self.ws) else 0
-        self.buffer["C1"] -= 1
-        self.buffer["C2"] -= 1
-        self.isWorking = True
         return self.ws[self.number - 1]
 
     def canWork(self):
         """If the Workstation can work now"""
         return self.buffer["C1"] > 0 and self.buffer["C2"] > 0
+
+    def bufferChange(self, time, change, component='C1'):
+        if change == "add":
+            self.buffer[component] += 1
+            self.bufferRecord.append([time, self.buffer[component], component])
+        else:
+            for item in self.buffer:
+                self.buffer[item] -= 1
+                self.bufferRecord.append([time, self.buffer[item], item])
+
+    def plot(self, component='C1'):
+        result = []
+        for item in self.bufferRecord:
+            if item[-1] == component:
+                result.append(item)
+        result.sort()
+        res = []
+        i = 0
+        while i < len(result) - 1:
+            if result[i][0] == result[i + 1][0]:
+                i += 2
+                continue
+            res.append(result[i])
+            i += 1
+
+        x = [a[0] for a in res]
+        y = [a[1] for a in res]
+        total = 0
+        for i in range(len(x) - 1):
+            total += (x[i + 1] - x[i]) * y[i]
+
+        average = [total / x[-1] for _ in range(len(x))]
+        print(average[0], len(res) / x[-1], total / len(res))
+
+        plt.step(x, y, where='post')
+        plt.hlines(average[0], x[0], x[-1], 'r')
+        print(len(res))
 
 
 class Workstation3:
@@ -119,39 +187,53 @@ class Workstation3:
         self.isWorking = False
         self.idleTime = 0
         self.startIdle = 0
+        self.bufferRecord = [[0, 0, 'C1'], [0, 0, 'C3']]
 
     def generate(self):
         """Generate one time needed to finish a product P3"""
         self.number += 1 if self.number + 1 < len(self.ws) else 0
-        self.buffer['C1'] -= 1
-        self.buffer['C3'] -= 1
-        self.isWorking = True
         return self.ws[self.number - 1]
 
     def canWork(self):
         """If the work station can work now"""
         return self.buffer["C1"] > 0 and self.buffer["C3"] > 0
 
+    def bufferChange(self, time, change, component='C1'):
+        if change == "add":
+            self.buffer[component] += 1
+            self.bufferRecord.append([time, self.buffer[component], component])
+        else:
+            for item in self.buffer:
+                self.buffer[item] -= 1
+                self.bufferRecord.append([time, self.buffer[item], item])
 
-def queue_diagram(Buffer, name):
-    res = [buffer for buffer in Buffer if buffer[-1] == name]
+    def plot(self, component='C1'):
+        result = []
+        for item in self.bufferRecord:
+            if item[-1] == component:
+                result.append(item)
+        result.sort()
+        res = []
+        i = 0
+        while i < len(result) - 1:
+            if result[i][0] == result[i + 1][0]:
+                i += 2
+                continue
+            res.append(result[i])
+            i += 1
 
-    res.sort()
-    x = [a[0] for a in res]
-    y = [a[1] for a in res]
+        x = [a[0] for a in res]
+        y = [a[1] for a in res]
+        total = 0
+        for i in range(len(x) - 1):
+            total += (x[i + 1] - x[i]) * y[i]
 
-    total = 0
-    for i in range(len(x) - 1):
-        total += (x[i + 1] - x[i]) * y[i]
+        average = [total / x[-1] for _ in range(len(x))]
+        print(average[0], len(res) / x[-1], total / len(res))
 
-    average = [total / x[-1] for _ in range(len(x))]
-    print(average[0], len(res) / x[-1], total / len(res))
-
-    plt.step(x, y, where='post')
-    plt.plot(x, average, 'r')
-    print(len(res))
-    plt.show()
-
+        plt.step(x, y, where='post')
+        plt.hlines(average[0], x[0], x[-1], 'r')
+        print(len(res))
 
 if __name__ == '__main__':
     worldTime = 0
@@ -163,9 +245,6 @@ if __name__ == '__main__':
     idleStart = 0
     idleEnd = 0
 
-    Buffer = [[0, W1.buffer['C1'], 'W1_C1'], [0, W2.buffer['C1'], 'W2_C1'],
-              [0, W2.buffer['C2'], 'W2_C2'], [0, W3.buffer['C1'], 'W3_C1'],
-              [0, W3.buffer['C3'], 'W3_C3']]
     # Buffer = [World_time, which_buffer, buffer_name]
 
     eventList = [[worldTime + I1.generate(), I1.whichtosend(W1, W2, W3), I1.component(), 'receive'],
@@ -183,17 +262,15 @@ if __name__ == '__main__':
         if event[-1] == 'receive':
             if event[1].buffer[event[2]] <= 1:
                 # if the buffer has room to admit the component
-                event[1].buffer[event[2]] += 1
-                Buffer.append([worldTime, event[1].buffer[event[2]], event[1].__name__ + '_' + event[2]])
+                event[1].bufferChange(worldTime, "add", event[2])
                 if not event[1].isWorking and event[1].canWork():
                     # the work station has ingredients to produce
-                    time = worldTime + event[1].generate()
-                    eventList.append([time, event[1], '', 'output'])
-                    Buffer.append([time, event[1].buffer[event[2]], event[1].__name__ + '_' + event[2]])
+                    event[1].isWorking = True
+                    event[1].bufferChange(worldTime, "pop")
+                    eventList.append([worldTime + event[1].generate(), event[1], '', 'output'])
                     event[1].idleTime += worldTime - event[1].startIdle
-                if generator == I1 and generator.number >= 300:
-                    continue
-                if generator == I2 and (generator.number22 >= 300 or generator.number23 >= 300):
+                if (generator == I1 and generator.number >= 300) or (
+                        generator == I2 and (generator.number22 >= 300 or generator.number23 >= 300)):
                     continue
                 eventList.append(
                     [worldTime + generator.generate(), generator.whichtosend(W1, W2, W3), generator.component(),
@@ -213,8 +290,11 @@ if __name__ == '__main__':
             event[1].isWorking = False
             event[1].startIdle = worldTime
             if event[1].canWork():
+                event[1].isWorking = True
+                event[1].bufferChange(worldTime, "pop")
                 eventList.append([worldTime + event[1].generate(), event[1], '', 'output'])
                 event[1].idleTime += worldTime - event[1].startIdle
 
-    print(worldTime, W1.number, W2.number, W3.number, W1.idleTime, W2.idleTime, W3.idleTime)
-    queue_diagram(Buffer, 'W3_C3')
+        print(worldTime, W1.number, W2.number, W3.number, W1.idleTime, W2.idleTime, W3.idleTime)
+    W3.plot('C3')
+    plt.show()

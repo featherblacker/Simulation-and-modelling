@@ -189,11 +189,35 @@ The model appears reasonable. Potential users and knowledgeable people can also 
 
 \subsubsection{Model Assumptions}
 
-Model assumption consists of two parts: structure assumption and data assumption. About the data assumption we have mentioned that in the last deliverable that the data we simulate comes from the data points generator, which is validated as that can produce similar data points to reality recorded samples. Now that the generator passes Chi-square validation, we can use it to generate experiment data for us and these points are representative. For the structure part, I used Python language to build a system as 
+The model assumption consists of two parts: structure assumption and data assumption. About the data assumption, we have mentioned that in the last deliverable that the data we simulate comes from the data points generator, which is validated as that can produce similar data points to reality recorded samples. Now that the generator passes Chi-square validation, we can use it to generate experimental data for us and these points are representative. For the structure part, I used Python language to build a system as what the question depicts. Each inspector and workstation is an object and python is an object-orientated program language so it's easy to achieve these functions.
 
 \subsubsection{Input-Output Transformation}
 
 \section{Production Runs and Analysis}
+\subsection{The Length of Time in Simulation}
+The length of time we record in the simulation is worth to talk. Although in workstation 1 the workstation many continuously working because it just need one component, the other two stations may stop working until the simulation ends. That is because the other two workstations needs two different kinds of gears and C2 and C3 are both provided by inspector 2 and also need C1 to start working. Of course, we can imagine in this experiment the number of C1 is not enough for both three workstations to finish their products, which means the last two components stay in the buffer for two long time until the simulation ends. So we have to arrange a good time length for them
+
+\subsection{Required Number of Replications}
+We need to perform several independent replications of the simulation in order to obtain usable results.
+
+In the project requirements, we stated that there must be a 0.95 confidence interval, and its width should not exceed 0.2 of the estimated value. This will perform 10 copies and then calculate each confidence interval based on the data from each copy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
