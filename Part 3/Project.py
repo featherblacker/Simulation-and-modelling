@@ -30,7 +30,7 @@ class Inspector1:
 
     def info(self, ):
         print('inspector 1 mean time {:.3f}'.format(np.mean(self.sp[:263])))
-        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:263]))/TIME_END))
+        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:263])) / TIME_END))
 
 
 class Workstation1:
@@ -72,7 +72,7 @@ class Workstation1:
             if result[i][0] == result[i + 1][0]:
                 i += 2
                 continue
-            if result[i][0]-0.001 <= TIME_END:
+            if result[i][0] - 0.001 <= TIME_END:
                 res.append(result[i])
                 i += 1
             else:
@@ -85,11 +85,16 @@ class Workstation1:
             total += (x[i + 1] - x[i]) * y[i]
 
         average = [total / x[-1] for _ in range(len(x))]
-        print('Workstation 1 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0], total / len(res)))
+        print('Workstation 1 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
+                                                                                                  total / len(res)))
 
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
-        print(len(res))
+        # print(len(res))
+
+    def output(self):
+        print('Number of output of Workstation 1: {}'.format(W1.number))
+        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:187])) / TIME_END))
 
 
 class Inspector2:
@@ -128,7 +133,8 @@ class Inspector2:
 
     def info(self, ):
         print('inspector 2 mean time {:.3f}'.format(np.mean(list(self.sp22[:42]) + list(self.sp23[:34]))))
-        print('inspector 2 idle time {:.3f}'.format((TIME_END - sum(list(self.sp22[:42]) + list(self.sp23[:34])))/TIME_END))
+        print('inspector 2 idle time {:.3f}'.format(
+            (TIME_END - sum(list(self.sp22[:42]) + list(self.sp23[:34]))) / TIME_END))
 
 
 class Workstation2:
@@ -164,7 +170,7 @@ class Workstation2:
     def plot(self, component='C1'):
         result = []
         for item in self.bufferRecord:
-            if item[-1] == component and item[0]-0.001 <= TIME_END:
+            if item[-1] == component and item[0] - 0.001 <= TIME_END:
                 result.append(item)
         result.sort()
         res = []
@@ -183,11 +189,15 @@ class Workstation2:
             total += (x[i + 1] - x[i]) * y[i]
 
         average = [total / x[-1] for _ in range(len(x))]
-        print('Workstation 2 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0], total / len(res)))
-
+        print('Workstation 2 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
+                                                                                                  total / len(res)))
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
-        print(len(res))
+        # print(len(res))
+
+    def output(self):
+        print('Number of output of Workstation 2: {}'.format(W2.number))
+        print('Idle time ratio of Workstation 2: {:.3f}'.format((TIME_END - sum(self.ws[:42])) / TIME_END))
 
 
 class Workstation3:
@@ -223,7 +233,7 @@ class Workstation3:
     def plot(self, component='C1'):
         result = []
         for item in self.bufferRecord:
-            if item[-1] == component and item[0]-0.001 <= TIME_END:
+            if item[-1] == component and item[0] - 0.001 <= TIME_END:
                 result.append(item)
         result.sort()
         res = []
@@ -242,11 +252,15 @@ class Workstation3:
             total += (x[i + 1] - x[i]) * y[i]
 
         average = [total / x[-1] for _ in range(len(x))]
-        print('Workstation 3 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0], total / len(res)))
-
+        print('Workstation 3 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
+                                                                                                  total / len(res)))
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
-        print(len(res))
+        # print(len(res))
+
+    def output(self):
+        print('Number of output of Workstation 3: {}'.format(W3.number))
+        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:34])) / TIME_END))
 
 
 if __name__ == '__main__':
@@ -311,5 +325,5 @@ if __name__ == '__main__':
                 event[1].idleTime += worldTime - event[1].startIdle
 
         # print('{:.3f}'.format(worldTime), W1.number, W2.number, W3.number, W1.buffer['C1'], W2.buffer['C1'], W2.buffer['C2'], W3.buffer['C1'], W3.buffer['C3'])
-    print(I1.info(), I2.info(), W1.plot('C1'), W2.plot('C1'), W2.plot('C2'), W3.plot('C1'), W3.plot('C3'))
+    print(I1.info(), I2.info(), W1.plot('C1'), W2.plot('C1'), W2.plot('C2'), W3.plot('C1'), W3.plot('C3'), W1.output(), W2.output(), W3.output())
     # plt.show()
