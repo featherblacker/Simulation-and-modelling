@@ -91,16 +91,16 @@ Here we have the number of each component in each buffer of the specific worksta
 \end{center}
 \end{figure}
 
-The x axle on the diagram shows the time line of the whole process of production, while the y axle indicates how many kind of this components in the buffer at this time. I also draw a red mean line to denote the average number of gears in buffer in this period. 
+The x axle on the diagram shows the time line of the whole process of production, while the y axle indicates how many kind of this components in the buffer at this time. I also draw a red line to denote the average number of gears in buffer in this period. It has to be mentioned that I ignored the case that the workstation receive the component and then immediately use it to produce. That is because the time component stay in buffer is extremely slow and we can see it as no change in the buffer. By the way, in order to get rid of error, we must promise all buffers of workstations are empty when the simulation ends, which is as same as the beginning. The time point in this simulation is T = 2713.501
 
 Component 1 buffer of Workstation 1:
 
-Verification: $L = 0.286, \lambda = 0.06, w = 4.723, T = 3135.49, N = 189$
+Verification: $L = 0.109, \lambda = 0.037, w = 2.979, T = 2713.501$
 \begin{equation}
-\lambda w = 0.06*4.723 = 0.283 \approx 0.286 = L
+\lambda w = 0.037*2.979 = 0.109 = L
 \end{equation}
 
-A little error is acceptable because the formulation is under the condition that $T \rightarrow \infty, N \rightarrow \infty$. This queue pass the Little's law verification.
+This queue pass the Little's law verification.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -112,9 +112,9 @@ A little error is acceptable because the formulation is under the condition that
 
 Component 1 buffer of Workstation 2:
 
-Verification: $L = 0.664, \lambda = 0.02, w = 28.034, T = 3135.49, N = 36$
+Verification: $L = 0.301, \lambda = 0.014, w = 21.773, T = 2713.501$
 \begin{equation}
-\lambda w = 0.02*28.034 = 0.561 \approx 0.664 = L
+\lambda w = 0.02*28.034 = 0.301 = L
 \end{equation}
 
 This queue pass the Little's law verification.
@@ -129,9 +129,9 @@ This queue pass the Little's law verification.
 
 Component 2 buffer of Workstation 2:
 
-Verification: $L = 1.037, \lambda = 0.02, w = 49.413, T = 3135.49, N = 33$
+Verification: $L = 0.751, \lambda = 0.020, w = 37.372, T = 2713.501$
 \begin{equation}
-\lambda w = 0.02*49.413 = 0.988 \approx 1.037 = L
+\lambda w = 0.020*37.372 = 0.751 = L
 \end{equation}
 
 This queue pass the Little's law verification.
@@ -146,9 +146,9 @@ This queue pass the Little's law verification.
 
 Component 1 buffer of Workstation 3:
 
-Verification: $L = 0.105, \lambda = 0.023, w = 4.598, T = 3135.49, N = 35$
+Verification: $L = 0.015, \lambda = 0.004, w = 3.676, T = 2713.501$
 \begin{equation}
-\lambda w = 0.023*4.598 = 0.106 \approx 0.105 = L
+\lambda w = 0.004*3.676 = 0.015 = L
 \end{equation}
 
 This queue pass the Little's law verification.
@@ -163,9 +163,9 @@ This queue pass the Little's law verification.
 
 Component 3 buffer of Workstation 3:
 
-Verification: $L = 1.903, \lambda = 0.013, w = 145.029, T = 3135.49, N = 20$
+Verification: $L = 1.556, \lambda = 0.024, w = 64.972, T = 2713.501$
 \begin{equation}
-\lambda w = 0.013*145.029 = 1.885 \approx 1.903 = L
+\lambda w = 0.024*64.972 = 1.556 = L
 \end{equation}
 
 This queue pass the Little's law verification.
@@ -195,7 +195,31 @@ The model assumption consists of two parts: structure assumption and data assump
 
 \section{Production Runs and Analysis}
 \subsection{The Length of Time in Simulation}
-The length of time we record in the simulation is worth to talk. Although in workstation 1 the workstation many continuously working because it just need one component, the other two stations may stop working until the simulation ends. That is because the other two workstations needs two different kinds of gears and C2 and C3 are both provided by inspector 2 and also need C1 to start working. Of course, we can imagine in this experiment the number of C1 is not enough for both three workstations to finish their products, which means the last two components stay in the buffer for two long time until the simulation ends. So we have to arrange a good time length for them
+The length of time we record in the simulation is worth to talk. Although in workstation 1 the workstation many continuously working because it just need one component, the other two stations may stop working until the simulation ends. That is because the other two workstations needs two different kinds of gears and C2 and C3 are both provided by inspector 2 and also need C1 to start working. Of course, we can imagine in this experiment the number of C1 is not enough for both three workstations to finish their products, which means the last two components stay in the buffer for much long time until the simulation ends. So we have to arrange a good time length for them, which is a time point that no components in all workstations' buffers. That would be helpful for us to calculate the output data points. The time point is $T = 2713.501$
+\subsection{Measures of Performance}
+Obviously, it's a discrete time data model, which we assign $[Y_1, Y_2, ..., Y_n]$ to output. The point estimation for discrete time data is:
+
+\begin{equation}
+\hat \theta = \frac{1}{n} \sum_{i=1}^{n}Y_i
+\end{equation}
+
+We hope that $E(\hat \theta)=\theta$
+The output of the system is gettable and we have confidence to evaluate it.
+
+To make sure that what I got is in static state, I used moving average and batch average to make sure this state is representative. I made experiment 10 times longer than the transit state to make sure the state is the static state. 
+
+Based on output distributions, suppose an output Y follows the normal distribution with mean $\theta$,variance $\delta ^2$ (both unknown). Let $Y_i$ be the average within the $i^{th}$ replication of the simulation (itsmathematical expectation is $\theta$). Sample variance across R replications:
+
+\begin{equation}
+S^2 = {\frac{1}{R-1} \sum^{R}_{i=1} (Y_i-\bar Y)}
+\end{equation}
+
+In this experiment, I did 10 times replications to estimate the confidence interval of the outputs. As the formulation, the confidence interval would be the normally distributed.
+
+\begin{equation}
+\bar Y\pm t_{\alpha / 2, R-1}\frac{S}{\sqrt R}
+\end{equation}
+
 
 \subsection{Required Number of Replications}
 We need to perform several independent replications of the simulation in order to obtain usable results.

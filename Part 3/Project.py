@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 
 np.random.seed(0)
 
+TIME_END = 2713.501
+
 
 class Inspector1:
     def __init__(self):
@@ -25,6 +27,10 @@ class Inspector1:
     def component(self):
         """Show ID"""
         return 'C1'
+
+    def info(self, ):
+        print('inspector 1 mean time {:.3f}'.format(np.mean(self.sp[:263])))
+        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:263]))/TIME_END))
 
 
 class Workstation1:
@@ -66,8 +72,11 @@ class Workstation1:
             if result[i][0] == result[i + 1][0]:
                 i += 2
                 continue
-            res.append(result[i])
-            i += 1
+            if result[i][0]-0.001 <= TIME_END:
+                res.append(result[i])
+                i += 1
+            else:
+                break
 
         x = [a[0] for a in res]
         y = [a[1] for a in res]
@@ -76,7 +85,7 @@ class Workstation1:
             total += (x[i + 1] - x[i]) * y[i]
 
         average = [total / x[-1] for _ in range(len(x))]
-        print(average[0], len(res) / x[-1], total / len(res))
+        print('Workstation 1 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0], total / len(res)))
 
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
@@ -117,6 +126,10 @@ class Inspector2:
         """Which component to send"""
         return "C2" if self.which else "C3"
 
+    def info(self, ):
+        print('inspector 2 mean time {:.3f}'.format(np.mean(list(self.sp22[:42]) + list(self.sp23[:34]))))
+        print('inspector 2 idle time {:.3f}'.format((TIME_END - sum(list(self.sp22[:42]) + list(self.sp23[:34])))/TIME_END))
+
 
 class Workstation2:
     def __init__(self):
@@ -151,7 +164,7 @@ class Workstation2:
     def plot(self, component='C1'):
         result = []
         for item in self.bufferRecord:
-            if item[-1] == component:
+            if item[-1] == component and item[0]-0.001 <= TIME_END:
                 result.append(item)
         result.sort()
         res = []
@@ -170,7 +183,7 @@ class Workstation2:
             total += (x[i + 1] - x[i]) * y[i]
 
         average = [total / x[-1] for _ in range(len(x))]
-        print(average[0], len(res) / x[-1], total / len(res))
+        print('Workstation 2 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0], total / len(res)))
 
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
@@ -210,7 +223,7 @@ class Workstation3:
     def plot(self, component='C1'):
         result = []
         for item in self.bufferRecord:
-            if item[-1] == component:
+            if item[-1] == component and item[0]-0.001 <= TIME_END:
                 result.append(item)
         result.sort()
         res = []
@@ -229,11 +242,12 @@ class Workstation3:
             total += (x[i + 1] - x[i]) * y[i]
 
         average = [total / x[-1] for _ in range(len(x))]
-        print(average[0], len(res) / x[-1], total / len(res))
+        print('Workstation 3 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0], total / len(res)))
 
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
         print(len(res))
+
 
 if __name__ == '__main__':
     worldTime = 0
@@ -261,6 +275,7 @@ if __name__ == '__main__':
 
         if event[-1] == 'receive':
             if event[1].buffer[event[2]] <= 1:
+
                 # if the buffer has room to admit the component
                 event[1].bufferChange(worldTime, "add", event[2])
                 if not event[1].isWorking and event[1].canWork():
@@ -295,6 +310,6 @@ if __name__ == '__main__':
                 eventList.append([worldTime + event[1].generate(), event[1], '', 'output'])
                 event[1].idleTime += worldTime - event[1].startIdle
 
-        print(worldTime, W1.number, W2.number, W3.number, W1.idleTime, W2.idleTime, W3.idleTime)
-    W3.plot('C3')
-    plt.show()
+        # print('{:.3f}'.format(worldTime), W1.number, W2.number, W3.number, W1.buffer['C1'], W2.buffer['C1'], W2.buffer['C2'], W3.buffer['C1'], W3.buffer['C3'])
+    print(I1.info(), I2.info(), W1.plot('C1'), W2.plot('C1'), W2.plot('C2'), W3.plot('C1'), W3.plot('C3'))
+    # plt.show()
