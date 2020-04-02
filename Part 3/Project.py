@@ -5,11 +5,10 @@ np.random.seed(0)
 
 TIME_END = 2713.501
 
-
 class Inspector1:
     def __init__(self):
         self.wait_time = 0  # accumulative wait time for inspector1
-        self.sp = np.loadtxt('sp1.txt')
+        self.sp = np.loadtxt('./Replication 1/sp1.txt')
         self.number = 0
 
     def generate(self):
@@ -38,7 +37,7 @@ class Workstation1:
         self.__name__ = 'W1'
         self.buffer = {"C1": 0}  # number of components in the buffer
         self.dealTime = 0  # accumulative time
-        self.ws = np.loadtxt('ws1.txt')  # number of outputs totally
+        self.ws = np.loadtxt('./Replication 1/ws1.txt')  # number of outputs totally
         self.number = 0  # number of outputs totally
         self.isWorking = False  # if the workstation is in working condition
         self.idleTime = 0
@@ -101,8 +100,8 @@ class Inspector2:
     def __init__(self):
         self.time = 0  # time needed to inspect a component
         self.wait_time = 0  # accumulative wait time for inspector1
-        self.sp22 = np.loadtxt('sp2.txt')
-        self.sp23 = np.loadtxt('sp3.txt')
+        self.sp22 = np.loadtxt('./Replication 1/sp2.txt')
+        self.sp23 = np.loadtxt('./Replication 1/sp3.txt')
         self.number22 = 0
         self.number23 = 0
         self.which = True
@@ -142,7 +141,7 @@ class Workstation2:
         self.__name__ = 'W2'
         self.buffer = {"C1": 0, "C2": 0}
         self.deal_time = 0  # accumulative time
-        self.ws = np.loadtxt('ws2.txt')
+        self.ws = np.loadtxt('./Replication 1/ws2.txt')
         self.number = 0  # number of outputs totally
         self.isWorking = False
         self.idleTime = 0
@@ -205,7 +204,7 @@ class Workstation3:
         self.__name__ = 'W3'
         self.buffer = {"C1": 0, "C3": 0}
         self.deal_time = 0  # accumulative time
-        self.ws = np.loadtxt('ws3.txt')
+        self.ws = np.loadtxt('./Replication 1/ws3.txt')
         self.number = 0  # number of outputs totally
         self.isWorking = False
         self.idleTime = 0
