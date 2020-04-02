@@ -226,6 +226,43 @@ We need to perform several independent replications of the simulation in order t
 
 In the project requirements, we stated that there must be a 0.95 confidence interval, and its width should not exceed 0.2 of the estimated value. This will perform 10 copies and then calculate each confidence interval based on the data from each copy.
 
+\begin{table}[htp]
+\caption{Replications of simulation}
+\begin{center}
+\begin{tabular}{ccccccccccc}
+\hline
+Replications & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\
+Inspector 1 mean time&10.288&9.689&10.580&1.87\\
+Inspector 2 mean time&19.045&16.605&20.924&2.18\\
+No. in Buffer W1C1&0.111&0.098&0.097&0.05\\
+No. in Buffer W2C1&0.305&0.343&0.449&0.68\\
+No. in Buffer W2C2&0.789&0.863&0.640&0.02\\
+No. in Buffer W3C1&0.012&0.058&0.081&0.31\\
+No. in Buffer W3C3&1.539&1.615&1.458&0.53\\
+Wait time W1C1&3.029&2.341&1.37&0.01\\
+Wait time W2C1&21.443&24.841&30.166&0.93\\
+Wait time W2C2&36.29&40.750&42.318&1.68\\
+Wait time W3C1&3.329&7.896&1.12&1.12\\
+Wait time W3C3&63.116&73.205&0.74&0.09\\
+No. P1&217&221&227&0.52\\
+No. P2&46&44&41&0.33\\
+No. P3&37&35&31&0.22\\
+Idle \% Inspector 1&0.003&0.001&0.001&0.14\\
+Idle \% Inspector 2&0.467&0.492&0.10&8.51\\
+Idle \% Workstation 1&0.646&0.662&0.672&0.19\\
+Idle \% Workstation 2&0.833&0.840&0.852&&&&&\\
+Idle \% Workstation 3&0.896&0.881&0.911&&&&&\\
+\hline
+Total& &300&300&20.08\\
+
+\hline
+
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+
 
 
 

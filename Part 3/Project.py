@@ -3,12 +3,14 @@ import matplotlib.pyplot as plt
 
 np.random.seed(0)
 
-TIME_END = 2713.501
+TIME_END = 2005.43
+ADDRESS = './Replication 4'
+
 
 class Inspector1:
     def __init__(self):
         self.wait_time = 0  # accumulative wait time for inspector1
-        self.sp = np.loadtxt('./Replication 1/sp1.txt')
+        self.sp = np.loadtxt(ADDRESS + '/sp1.txt')
         self.number = 0
 
     def generate(self):
@@ -28,8 +30,8 @@ class Inspector1:
         return 'C1'
 
     def info(self, ):
-        print('inspector 1 mean time {:.3f}'.format(np.mean(self.sp[:263])))
-        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:263])) / TIME_END))
+        print('inspector 1 mean time {:.3f}'.format(np.mean(self.sp[:213])))
+        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:213])) / TIME_END))
 
 
 class Workstation1:
@@ -37,7 +39,7 @@ class Workstation1:
         self.__name__ = 'W1'
         self.buffer = {"C1": 0}  # number of components in the buffer
         self.dealTime = 0  # accumulative time
-        self.ws = np.loadtxt('./Replication 1/ws1.txt')  # number of outputs totally
+        self.ws = np.loadtxt(ADDRESS + '/ws1.txt')  # number of outputs totally
         self.number = 0  # number of outputs totally
         self.isWorking = False  # if the workstation is in working condition
         self.idleTime = 0
@@ -85,7 +87,7 @@ class Workstation1:
 
         average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 1 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / len(res)))
+                                                                                                  total / 149))
 
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
@@ -93,15 +95,15 @@ class Workstation1:
 
     def output(self):
         print('Number of output of Workstation 1: {}'.format(W1.number))
-        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:187])) / TIME_END))
+        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:149])) / TIME_END))
 
 
 class Inspector2:
     def __init__(self):
         self.time = 0  # time needed to inspect a component
         self.wait_time = 0  # accumulative wait time for inspector1
-        self.sp22 = np.loadtxt('./Replication 1/sp2.txt')
-        self.sp23 = np.loadtxt('./Replication 1/sp3.txt')
+        self.sp22 = np.loadtxt(ADDRESS + '/sp2.txt')
+        self.sp23 = np.loadtxt(ADDRESS + '/sp3.txt')
         self.number22 = 0
         self.number23 = 0
         self.which = True
@@ -131,9 +133,9 @@ class Inspector2:
         return "C2" if self.which else "C3"
 
     def info(self, ):
-        print('inspector 2 mean time {:.3f}'.format(np.mean(list(self.sp22[:42]) + list(self.sp23[:34]))))
+        print('inspector 2 mean time {:.3f}'.format(np.mean(list(self.sp22[:32]) + list(self.sp23[:21]))))
         print('inspector 2 idle time {:.3f}'.format(
-            (TIME_END - sum(list(self.sp22[:42]) + list(self.sp23[:34]))) / TIME_END))
+            (TIME_END - sum(list(self.sp22[:32]) + list(self.sp23[:21]))) / TIME_END))
 
 
 class Workstation2:
@@ -141,7 +143,7 @@ class Workstation2:
         self.__name__ = 'W2'
         self.buffer = {"C1": 0, "C2": 0}
         self.deal_time = 0  # accumulative time
-        self.ws = np.loadtxt('./Replication 1/ws2.txt')
+        self.ws = np.loadtxt(ADDRESS + '/ws2.txt')
         self.number = 0  # number of outputs totally
         self.isWorking = False
         self.idleTime = 0
@@ -187,16 +189,19 @@ class Workstation2:
         for i in range(len(x) - 1):
             total += (x[i + 1] - x[i]) * y[i]
 
-        average = [total / x[-1] for _ in range(len(x))]
+        if x[-1] == 0:
+            average = [0]
+        else:
+            average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 2 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / len(res)))
+                                                                                                  total / 32))
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
         # print(len(res))
 
     def output(self):
         print('Number of output of Workstation 2: {}'.format(W2.number))
-        print('Idle time ratio of Workstation 2: {:.3f}'.format((TIME_END - sum(self.ws[:42])) / TIME_END))
+        print('Idle time ratio of Workstation 2: {:.3f}'.format((TIME_END - sum(self.ws[:32])) / TIME_END))
 
 
 class Workstation3:
@@ -204,7 +209,7 @@ class Workstation3:
         self.__name__ = 'W3'
         self.buffer = {"C1": 0, "C3": 0}
         self.deal_time = 0  # accumulative time
-        self.ws = np.loadtxt('./Replication 1/ws3.txt')
+        self.ws = np.loadtxt(ADDRESS + '/ws3.txt')
         self.number = 0  # number of outputs totally
         self.isWorking = False
         self.idleTime = 0
@@ -250,16 +255,19 @@ class Workstation3:
         for i in range(len(x) - 1):
             total += (x[i + 1] - x[i]) * y[i]
 
-        average = [total / x[-1] for _ in range(len(x))]
+        if x[-1] == 0:
+            average = [0]
+        else:
+            average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 3 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / len(res)))
+                                                                                                  total / 21))
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
         # print(len(res))
 
     def output(self):
         print('Number of output of Workstation 3: {}'.format(W3.number))
-        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:34])) / TIME_END))
+        print('Idle time ratio of Workstation 3: {:.3f}'.format((TIME_END - sum(self.ws[:21])) / TIME_END))
 
 
 if __name__ == '__main__':
@@ -280,7 +288,7 @@ if __name__ == '__main__':
     # initialize the environment
 
     while eventList:
-        eventList.sort()
+        eventList.sort(key=lambda x: x[0])
         event = eventList.pop(0)
         # take out the nearest event from event list
         worldTime = event[0]
@@ -323,6 +331,7 @@ if __name__ == '__main__':
                 eventList.append([worldTime + event[1].generate(), event[1], '', 'output'])
                 event[1].idleTime += worldTime - event[1].startIdle
 
-        # print('{:.3f}'.format(worldTime), W1.number, W2.number, W3.number, W1.buffer['C1'], W2.buffer['C1'], W2.buffer['C2'], W3.buffer['C1'], W3.buffer['C3'])
-    print(I1.info(), I2.info(), W1.plot('C1'), W2.plot('C1'), W2.plot('C2'), W3.plot('C1'), W3.plot('C3'), W1.output(), W2.output(), W3.output())
+        print('{:.3f}'.format(worldTime), W1.number, W2.number, W3.number, W1.buffer['C1'], W2.buffer['C1'], W2.buffer['C2'], W3.buffer['C1'], W3.buffer['C3'])
+    print(I1.info(), I2.info(), W1.plot('C1'), W2.plot('C1'), W2.plot('C2'), W3.plot('C1'), W3.plot('C3'), W1.output(),
+          W2.output(), W3.output())
     # plt.show()
