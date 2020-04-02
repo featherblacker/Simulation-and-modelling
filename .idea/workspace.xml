@@ -2,74 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1899ee4f-cbad-4932-81e5-a3bd478a0151" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Part 3/Generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Real data/servinsp1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Real data/servinsp22.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Real data/servinsp23.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Real data/ws1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Real data/ws2.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Real data/ws3.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 10/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 10/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 10/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 10/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 10/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 10/ws3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 2/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 2/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 2/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 2/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 2/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 2/ws3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 3/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 3/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 3/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 3/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 3/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 3/ws3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 4/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 4/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 4/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 4/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 4/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 4/ws3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 5/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 5/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 5/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 5/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 5/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 5/ws3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 6/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 6/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 6/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 6/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 6/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 6/ws3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 7/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 7/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 7/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 7/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 7/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 7/ws3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 8/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 8/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 8/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 8/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 8/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 8/ws3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 9/sp1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 9/sp2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 9/sp3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 9/ws1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 9/ws2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Part 3/Replication 9/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 3/format.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 3/format.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 3/Part 3.aux" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Part 3.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 3/Part 3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Part 3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 3/Part 3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Part 3.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 3/Part 3.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Part 3.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 3/Part 3.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Part 3.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part 3/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,35 +47,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Part 3" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Part 3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Project (1)">
-    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.format">
     <configuration name="Generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,6 +139,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="format" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Part 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part 3/format.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.format" />
         <item itemvalue="Python.Project (1)" />
         <item itemvalue="Python.Generator" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Project" />
-        <item itemvalue="Python.1" />
       </list>
     </recent_temporary>
   </component>
@@ -323,37 +263,41 @@
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state x="104" y="100" width="1844" height="952" key="DiffContextDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1585611804698" />
-    <state width="2027" height="271" key="GridCell.Tab.0.bottom" timestamp="1585806686073">
+    <state width="2027" height="271" key="GridCell.Tab.0.bottom" timestamp="1585833773986">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.bottom/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559794" />
     <state width="2027" height="271" key="GridCell.Tab.0.bottom/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686073" />
+    <state width="2027" height="271" key="GridCell.Tab.0.bottom/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747751" />
     <state width="1415" height="135" key="GridCell.Tab.0.bottom/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1585804228642" />
+    <state width="2027" height="271" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1585833773986" />
     <state width="2023" height="127" key="GridCell.Tab.0.bottom/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298303" />
-    <state width="2027" height="271" key="GridCell.Tab.0.center" timestamp="1585806686071">
+    <state width="2027" height="271" key="GridCell.Tab.0.center" timestamp="1585833773985">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.center/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559793" />
     <state width="2027" height="271" key="GridCell.Tab.0.center/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686071" />
+    <state width="2027" height="271" key="GridCell.Tab.0.center/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747750" />
     <state width="1415" height="135" key="GridCell.Tab.0.center/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1585804228641" />
+    <state width="2027" height="271" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1585833773985" />
     <state width="2023" height="127" key="GridCell.Tab.0.center/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2027" height="271" key="GridCell.Tab.0.left" timestamp="1585806686070">
+    <state width="2027" height="271" key="GridCell.Tab.0.left" timestamp="1585833773982">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.left/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559792" />
     <state width="2027" height="271" key="GridCell.Tab.0.left/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686070" />
+    <state width="2027" height="271" key="GridCell.Tab.0.left/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747748" />
     <state width="1415" height="135" key="GridCell.Tab.0.left/4.0.1436.900@4.0.1436.900" timestamp="1581046580840" />
-    <state width="2027" height="271" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1585804228641" />
+    <state width="2027" height="271" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1585833773982" />
     <state width="2023" height="127" key="GridCell.Tab.0.left/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2027" height="271" key="GridCell.Tab.0.right" timestamp="1585806686072">
+    <state width="2027" height="271" key="GridCell.Tab.0.right" timestamp="1585833773985">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.right/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559794" />
     <state width="2027" height="271" key="GridCell.Tab.0.right/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686072" />
+    <state width="2027" height="271" key="GridCell.Tab.0.right/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747750" />
     <state width="1415" height="135" key="GridCell.Tab.0.right/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1585804228642" />
+    <state width="2027" height="271" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1585833773985" />
     <state width="2023" height="127" key="GridCell.Tab.0.right/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
     <state width="2027" height="262" key="GridCell.Tab.1.bottom" timestamp="1585803233917">
       <screen x="4" y="0" width="2044" height="1152" />
@@ -375,14 +319,18 @@
     </state>
     <state width="1415" height="327" key="GridCell.Tab.1.right/4.0.1436.900@4.0.1436.900" timestamp="1581045635387" />
     <state width="2027" height="262" key="GridCell.Tab.1.right/4.0.2044.1152@4.0.2044.1152" timestamp="1585803233916" />
-    <state x="535" y="215" key="SettingsEditor" timestamp="1585576966786">
+    <state x="535" y="215" key="SettingsEditor" timestamp="1585831557710">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
-    <state x="535" y="215" key="SettingsEditor/4.0.2044.1152@4.0.2044.1152" timestamp="1585576966786" />
+    <state x="535" y="215" key="SettingsEditor/4.0.2044.1152@4.0.2044.1152" timestamp="1585831557710" />
     <state x="748" y="317" key="VcsDiffUtil.ChangesDialog" timestamp="1585611652240">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state x="748" y="317" key="VcsDiffUtil.ChangesDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1585611652240" />
+    <state x="813" y="500" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585831599338">
+      <screen x="4" y="0" width="2044" height="1152" />
+    </state>
+    <state x="813" y="500" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/4.0.2044.1152@4.0.2044.1152" timestamp="1585831599338" />
     <state x="287" y="193" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581042376019">
       <screen x="4" y="0" width="1436" height="900" />
     </state>
