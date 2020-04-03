@@ -2,6 +2,7 @@
 \usepackage{indentfirst}
 \setlength{\parindent}{2em}
 \usepackage{graphicx}
+\usepackage{amsmath}
 
 \title{SYSC 5001W: Project deliverable 3} % Title of the assignment
 
@@ -27,7 +28,6 @@ The first thing we need to consider after model translation is data collection. 
 \includegraphics[width=2in]{dataCollection5.png}
 \includegraphics[width=2in]{dataCollection6.png}
 \caption{Data collection of 3 Inspectors and 3 Workstations}
-\label{data}
 \end{center}
 \end{figure}
 
@@ -50,7 +50,7 @@ I choose exponential distribution to do a fitting and it seems good.
 
 The construction of histograms are necessary ingredients for choosing a family of distribution but it's not as useful to evaluate the fit of chosen distribution. Quantile-quantile plot is a useful tool for evaluating distribution fit.
 
-First let ${\{x_i, i=1,2,...,n\}}$ be sampled data and sort the from the smallest to the largest ${\{y_j, j=1,2,...,n\}}$. The $q-q$ plot is based on that $y_i$ is an estimate of the $(j-1/2)/n$ quantile of sampled data. I set $\sqrt{300} = 18$ bins totally.
+First let ${\{x_i, i=1,2,\dots,n\}}$ be sampled data and sort the from the smallest to the largest ${\{y_j, j=1,2,\dots,n\}}$. The $q-q$ plot is based on that $y_i$ is an estimate of the $(j-1/2)/n$ quantile of sampled data. I set $\sqrt{300} = 18$ bins totally.
 
 \begin{figure}[htbp]
 \begin{center}

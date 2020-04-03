@@ -208,13 +208,15 @@ The output of the system is gettable and we have confidence to evaluate it.
 
 To make sure that what I got is in static state, I used moving average and batch average to make sure this state is representative. I made experiment 10 times longer than the transit state to make sure the state is the static state. 
 
-Based on output distributions, suppose an output Y follows the normal distribution with mean $\theta$,variance $\delta ^2$ (both unknown). Let $Y_i$ be the average within the $i^{th}$ replication of the simulation (itsmathematical expectation is $\theta$). Sample variance across R replications:
+Based on output distributions, suppose an output Y follows the normal distribution with mean $\theta$,
+variance $\delta ^2$ (both unknown). Let $Y_i$ be the average within the $i^{th}$ replication of the simulation (its
+mathematical expectation is $\theta$). Sample variance across R replications:
 
 \begin{equation}
 S^2 = {\frac{1}{R-1} \sum^{R}_{i=1} (Y_i-\bar Y)}
 \end{equation}
 
-In this experiment, I did 10 times replications to estimate the confidence interval of the outputs. As the formulation, the confidence interval would be the normally distributed.
+In this experiment, I did 10 times replications to estimate the confidence interval of the outputs. As the formulation, the confidence interval would be the normally distributed. The confidence interval I set is 0.95 so the $\alpha$ has to be 0.05.
 
 \begin{equation}
 \bar Y\pm t_{\alpha / 2, R-1}\frac{S}{\sqrt R}
@@ -224,7 +226,25 @@ In this experiment, I did 10 times replications to estimate the confidence inter
 \subsection{Required Number of Replications}
 We need to perform several independent replications of the simulation in order to obtain usable results.
 
-In the project requirements, we stated that there must be a 0.95 confidence interval, and its width should not exceed 0.2 of the estimated value. This will perform 10 copies and then calculate each confidence interval based on the data from each copy.
+In the project requirements, we stated that there must be a 0.95 confidence interval, and its width should not exceed 0.2 of the estimated value. This will perform 10 copies and then calculate each confidence interval based on the data from each copy. The verification of required number of replications is easy as below:
+\begin{equation}
+R_0 = 10, S_{0}^2 = 0.374, \epsilon = 0.437\\
+\end{equation}
+\begin{equation}
+(\frac{z_0.025, S_0}{\epsilon})^2 = \frac{1.96^2*0.374}{0.437^2} = 7.524
+\end{equation}
+
+which means it at least needs 8 replications, for the final sample size
+
+\begin{equation}
+R = 10, t_{0.025, R-1} = 2.2281\\
+\end{equation}
+\begin{equation}
+(\frac{ t_{0.025, R-1} S_0}{\epsilon})^2 = 3.636 < 10
+\end{equation}
+
+10 times replications is acceptable.
+
 
 \begin{table}[htp]
 \caption{Replications of simulations}
