@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 np.random.seed(0)
 
-TIME_END = 2005.43
-ADDRESS = './Replication 4'
+TIME_END = 2713.501
+ADDRESS = './Replication 1'
 
 
 class Inspector1:
@@ -30,8 +30,8 @@ class Inspector1:
         return 'C1'
 
     def info(self, ):
-        print('inspector 1 mean time {:.3f}'.format(np.mean(self.sp[:213])))
-        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:213])) / TIME_END))
+        print('inspector 1 mean time {:.3f}'.format(np.mean(self.sp[:263])))
+        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:263])) / TIME_END))
 
 
 class Workstation1:
@@ -87,7 +87,7 @@ class Workstation1:
 
         average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 1 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / 149))
+                                                                                                  total / 187))
 
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
@@ -95,7 +95,7 @@ class Workstation1:
 
     def output(self):
         print('Number of output of Workstation 1: {}'.format(W1.number))
-        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:149])) / TIME_END))
+        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:187])) / TIME_END))
 
 
 class Inspector2:
@@ -133,9 +133,9 @@ class Inspector2:
         return "C2" if self.which else "C3"
 
     def info(self, ):
-        print('inspector 2 mean time {:.3f}'.format(np.mean(list(self.sp22[:32]) + list(self.sp23[:21]))))
+        print('inspector 2 mean time {:.3f}'.format(np.mean(list(self.sp22[:42]) + list(self.sp23[:34]))))
         print('inspector 2 idle time {:.3f}'.format(
-            (TIME_END - sum(list(self.sp22[:32]) + list(self.sp23[:21]))) / TIME_END))
+            (TIME_END - sum(list(self.sp22[:42]) + list(self.sp23[:34]))) / TIME_END))
 
 
 class Workstation2:
@@ -194,14 +194,14 @@ class Workstation2:
         else:
             average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 2 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / 32))
+                                                                                                  total / 42))
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
         # print(len(res))
 
     def output(self):
         print('Number of output of Workstation 2: {}'.format(W2.number))
-        print('Idle time ratio of Workstation 2: {:.3f}'.format((TIME_END - sum(self.ws[:32])) / TIME_END))
+        print('Idle time ratio of Workstation 2: {:.3f}'.format((TIME_END - sum(self.ws[:42])) / TIME_END))
 
 
 class Workstation3:
@@ -260,14 +260,14 @@ class Workstation3:
         else:
             average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 3 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / 21))
+                                                                                                  total / 34))
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
         # print(len(res))
 
     def output(self):
         print('Number of output of Workstation 3: {}'.format(W3.number))
-        print('Idle time ratio of Workstation 3: {:.3f}'.format((TIME_END - sum(self.ws[:21])) / TIME_END))
+        print('Idle time ratio of Workstation 3: {:.3f}'.format((TIME_END - sum(self.ws[:34])) / TIME_END))
 
 
 if __name__ == '__main__':

@@ -6,18 +6,35 @@
 \setlength{\parindent}{2em}
 \usepackage{graphicx}
 
-\title{SYSC 5001W: Project deliverable 2} % Title of the assignment
+\title{SYSC 5001W: Project deliverable 4} % Title of the assignment
 
 \author{Qiguang Chu\\ \texttt{300042722}} % Author name and email address
 
 \date{University of Ottawa --- \today} % University, school and/or department name(s) and a date
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------d----------------------------------------
 
 \begin{document}
 
 \maketitle
 
+\section{An Alternative Operating Policy}
+\subsection{Purpose}
+We've got the data statistic of the model we have and we want to do some improvement on it. Here I would like to propose a new algorithm that the system follows and performs better than the origin one. The new proposed one would be more efficient which means the total finish time would be shorter and components take less time in the buffer. The work flow would take less time to product the same number of products and in some way it would save a lot of money.
 
+\subsection{A More Efficient Policy}
+At first, let's consider about what it would be if we put that inspector 1 first output to satisfy workstation 2 and workstation 3 so the output of workstation would be more fluent and it may costs less time. As the original policy said, Inspector 1 routes components C1 to the buffer with the smallest number of components in waiting (i.e., a routing policy according to the shortest queue). In case of a tie, W1 has the highest and W3 the lowest priority. Now we change it to that Inspector 1 routed components C1 to the buffer with the workstation 2 first and then to the workstation 3. In this case, Inspector 2 has the highest priority and then Inspector 3 and Inspector 1 has the lowest priority. \\
+The code is not hard to modify and we just need to change the rule of distribution of Inspector 1.\\
+
+
+
+
+
+
+ We declare how to compare performance of two models here. 
+
+
+
+The purpose is to compare alternative system designs. The method of comparing is replications is used to analyze the output data.
 
 \end{document}
