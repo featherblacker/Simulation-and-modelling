@@ -3,8 +3,9 @@ import matplotlib.pyplot as plt
 
 np.random.seed(0)
 
-TIME_END = 2713.501
-ADDRESS = './Replication 1'
+TIME_END = 3467.462
+ADDRESS = './Replication 10'
+ALGORITHM = 'altered'
 
 
 class Inspector1:
@@ -18,25 +19,30 @@ class Inspector1:
         self.number += 1 if self.number + 1 <= len(self.sp) else 0
         return self.sp[self.number - 1]
 
-    def whichtosend(self, W1, W2, W3):
-        """Decide which workstation to send the component"""
-        if W1.buffer["C1"] <= min(W2.buffer["C1"], W3.buffer["C1"]):
-            return W1
+    def whichtosend(self, W1, W2, W3, algorithm):
+        """Decide which algorithm to use and which workstation to send the component"""
+        if algorithm == "origin":
+            if W1.buffer["C1"] <= min(W2.buffer["C1"], W3.buffer["C1"]):
+                return W1
+            else:
+                return W2 if W2.buffer["C1"] <= W3.buffer["C1"] else W3
         else:
-            return W2 if W2.buffer["C1"] <= W3.buffer["C1"] else W3
+            if W2.buffer["C1"] <= min(W3.buffer["C1"], W1.buffer["C1"]):
+                return W2
+            else:
+                return W3 if W3.buffer["C1"] <= W1.buffer["C1"] else W1
 
     def component(self):
         """Show ID"""
         return 'C1'
 
     def info(self, ):
-        print('inspector 1 mean time {:.3f}'.format(np.mean(self.sp[:263])))
-        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:263])) / TIME_END))
+        print('inspector 1 mean time {:.3f}'.format(np.mean(self.sp[:300])))
+        print('inspector 1 idle time {:.3f}'.format((TIME_END - np.sum(self.sp[:300])) / TIME_END))
 
 
 class Workstation1:
     def __init__(self):
-        self.__name__ = 'W1'
         self.buffer = {"C1": 0}  # number of components in the buffer
         self.dealTime = 0  # accumulative time
         self.ws = np.loadtxt(ADDRESS + '/ws1.txt')  # number of outputs totally
@@ -87,7 +93,7 @@ class Workstation1:
 
         average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 1 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / 187))
+                                                                                                  total / 122))
 
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
@@ -95,7 +101,7 @@ class Workstation1:
 
     def output(self):
         print('Number of output of Workstation 1: {}'.format(W1.number))
-        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:187])) / TIME_END))
+        print('Idle time ratio of Workstation 1: {:.3f}'.format((TIME_END - sum(self.ws[:122])) / TIME_END))
 
 
 class Inspector2:
@@ -124,7 +130,7 @@ class Inspector2:
         self.which = False
         return self.sp23[self.number23 - 1]
 
-    def whichtosend(self, W1, W2, W3):
+    def whichtosend(self, W1, W2, W3, algorithm=ALGORITHM):
         """Decide which Workstation to send"""
         return W2 if self.which else W3
 
@@ -132,15 +138,14 @@ class Inspector2:
         """Which component to send"""
         return "C2" if self.which else "C3"
 
-    def info(self, ):
-        print('inspector 2 mean time {:.3f}'.format(np.mean(list(self.sp22[:42]) + list(self.sp23[:34]))))
+    def info(self):
+        print('inspector 2 mean time {:.3f}'.format(np.mean(list(self.sp22[:95]) + list(self.sp23[:82]))))
         print('inspector 2 idle time {:.3f}'.format(
-            (TIME_END - sum(list(self.sp22[:42]) + list(self.sp23[:34]))) / TIME_END))
+            (TIME_END - sum(list(self.sp22[:95]) + list(self.sp23[:82]))) / TIME_END))
 
 
 class Workstation2:
     def __init__(self):
-        self.__name__ = 'W2'
         self.buffer = {"C1": 0, "C2": 0}
         self.deal_time = 0  # accumulative time
         self.ws = np.loadtxt(ADDRESS + '/ws2.txt')
@@ -194,19 +199,18 @@ class Workstation2:
         else:
             average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 2 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / 42))
+                                                                                                  total / 95))
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
         # print(len(res))
 
     def output(self):
         print('Number of output of Workstation 2: {}'.format(W2.number))
-        print('Idle time ratio of Workstation 2: {:.3f}'.format((TIME_END - sum(self.ws[:42])) / TIME_END))
+        print('Idle time ratio of Workstation 2: {:.3f}'.format((TIME_END - sum(self.ws[:95])) / TIME_END))
 
 
 class Workstation3:
     def __init__(self):
-        self.__name__ = 'W3'
         self.buffer = {"C1": 0, "C3": 0}
         self.deal_time = 0  # accumulative time
         self.ws = np.loadtxt(ADDRESS + '/ws3.txt')
@@ -260,14 +264,14 @@ class Workstation3:
         else:
             average = [total / x[-1] for _ in range(len(x))]
         print('Workstation 3 mean number of {} in line: {:.3f}, mean waiting time: {:.3f}'.format(component, average[0],
-                                                                                                  total / 34))
+                                                                                                  total / 82))
         plt.step(x, y, where='post')
         plt.hlines(average[0], x[0], x[-1], 'r')
         # print(len(res))
 
     def output(self):
         print('Number of output of Workstation 3: {}'.format(W3.number))
-        print('Idle time ratio of Workstation 3: {:.3f}'.format((TIME_END - sum(self.ws[:34])) / TIME_END))
+        print('Idle time ratio of Workstation 3: {:.3f}'.format((TIME_END - sum(self.ws[:82])) / TIME_END))
 
 
 if __name__ == '__main__':
@@ -282,8 +286,8 @@ if __name__ == '__main__':
 
     # Buffer = [World_time, which_buffer, buffer_name]
 
-    eventList = [[worldTime + I1.generate(), I1.whichtosend(W1, W2, W3), I1.component(), 'receive'],
-                 [worldTime + I2.generate(), I2.whichtosend(W1, W2, W3), I2.component(), 'receive']]
+    eventList = [[worldTime + I1.generate(), I1.whichtosend(W1, W2, W3, ALGORITHM), I1.component(), 'receive'],
+                 [worldTime + I2.generate(), I2.whichtosend(W1, W2, W3, ALGORITHM), I2.component(), 'receive']]
     # format: [time, objective, component, activity]
     # initialize the environment
 
@@ -309,7 +313,7 @@ if __name__ == '__main__':
                         generator == I2 and (generator.number22 >= 300 or generator.number23 >= 300)):
                     continue
                 eventList.append(
-                    [worldTime + generator.generate(), generator.whichtosend(W1, W2, W3), generator.component(),
+                    [worldTime + generator.generate(), generator.whichtosend(W1, W2, W3, ALGORITHM), generator.component(),
                      'receive'])
             else:
                 # no room for this component, it has to wait for room to settle down

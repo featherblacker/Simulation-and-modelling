@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1899ee4f-cbad-4932-81e5-a3bd478a0151" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/Project.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/Project.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/Project.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/Project.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part 3/Part 3 Qiguang Chu.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Part 3 Qiguang Chu.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 3/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Project.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 4/Project.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Part 4/Project.tex" afterDir="false" />
     </list>
@@ -257,41 +252,41 @@
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state x="104" y="100" width="1844" height="952" key="DiffContextDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1585611804698" />
-    <state width="2027" height="271" key="GridCell.Tab.0.bottom" timestamp="1586011950849">
+    <state width="2027" height="271" key="GridCell.Tab.0.bottom" timestamp="1586051506370">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.bottom/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559794" />
     <state width="2027" height="271" key="GridCell.Tab.0.bottom/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686073" />
     <state width="2027" height="271" key="GridCell.Tab.0.bottom/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747751" />
     <state width="1415" height="135" key="GridCell.Tab.0.bottom/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1586011950849" />
+    <state width="2027" height="271" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1586051506370" />
     <state width="2023" height="127" key="GridCell.Tab.0.bottom/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298303" />
-    <state width="2027" height="271" key="GridCell.Tab.0.center" timestamp="1586011950848">
+    <state width="2027" height="271" key="GridCell.Tab.0.center" timestamp="1586051506369">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.center/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559793" />
     <state width="2027" height="271" key="GridCell.Tab.0.center/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686071" />
     <state width="2027" height="271" key="GridCell.Tab.0.center/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747750" />
     <state width="1415" height="135" key="GridCell.Tab.0.center/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1586011950848" />
+    <state width="2027" height="271" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1586051506369" />
     <state width="2023" height="127" key="GridCell.Tab.0.center/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2027" height="271" key="GridCell.Tab.0.left" timestamp="1586011950848">
+    <state width="2027" height="271" key="GridCell.Tab.0.left" timestamp="1586051506368">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.left/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559792" />
     <state width="2027" height="271" key="GridCell.Tab.0.left/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686070" />
     <state width="2027" height="271" key="GridCell.Tab.0.left/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747748" />
     <state width="1415" height="135" key="GridCell.Tab.0.left/4.0.1436.900@4.0.1436.900" timestamp="1581046580840" />
-    <state width="2027" height="271" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1586011950848" />
+    <state width="2027" height="271" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1586051506368" />
     <state width="2023" height="127" key="GridCell.Tab.0.left/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2027" height="271" key="GridCell.Tab.0.right" timestamp="1586011950849">
+    <state width="2027" height="271" key="GridCell.Tab.0.right" timestamp="1586051506369">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.right/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559794" />
     <state width="2027" height="271" key="GridCell.Tab.0.right/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686072" />
     <state width="2027" height="271" key="GridCell.Tab.0.right/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747750" />
     <state width="1415" height="135" key="GridCell.Tab.0.right/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1586011950849" />
+    <state width="2027" height="271" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1586051506369" />
     <state width="2023" height="127" key="GridCell.Tab.0.right/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
     <state width="2027" height="262" key="GridCell.Tab.1.bottom" timestamp="1585834701953">
       <screen x="4" y="0" width="2044" height="1152" />

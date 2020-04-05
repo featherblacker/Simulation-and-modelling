@@ -25,16 +25,33 @@ We've got the data statistic of the model we have and we want to do some improve
 \subsection{A More Efficient Policy}
 At first, let's consider about what it would be if we put that inspector 1 first output to satisfy workstation 2 and workstation 3 so the output of workstation would be more fluent and it may costs less time. As the original policy said, Inspector 1 routes components C1 to the buffer with the smallest number of components in waiting (i.e., a routing policy according to the shortest queue). In case of a tie, W1 has the highest and W3 the lowest priority. Now we change it to that Inspector 1 routed components C1 to the buffer with the workstation 2 first and then to the workstation 3. In this case, Inspector 2 has the highest priority and then Inspector 3 and Inspector 1 has the lowest priority. \\
 The code is not hard to modify and we just need to change the rule of distribution of Inspector 1.\\
+The total time of production may be not changed so much but the block time and idle time would vastly decreased which means the efficient of each inspectors and workstation would be better. Basically, the less idle time in the model indicates that less consumption in the reality. Especially, the number of product 2 and product 3 would be increased and the ratio of three products would be balanced.\\
+\subsection{Compare two models}
+We would like to compare these two models which is better so we do the same things for these two and compare. We already did ten replications for the original model and we have to do the same thing for the altered one. \\
+The purpose is to compare alternative system designs. The method of comparing is replications is used to analyze the output data.\\
+We declare how to compare performance of two models here. The mean performance measure for system is denoted by $\theta_1$ and the modified one is denoted by $\theta_2$. To obtain point and interval estimates for the difference in mean performance, namely$\theta_1-\theta_2$. We formulate the rule here the main measurement is which model has less idle time for workstation and inspectors and which model has less block time in the buffer.\\
+We compute the confidence interval for $\theta_1 - \theta_2$:
+\begin{itemize}
+\item If c.i. is totally to the left of 0, strong evidence for the hypothesis that $\theta_1-\theta_2 < 0$($\theta_1<\theta_2$).\item If c.i. is totally to the right of 0, strong evidence for the hypothesis $\theta_1-\theta_2 > 0$(($\theta_1>\theta_2$).
+\item If c.i. is totally contains 0, no strong statistical evidence that one system is better than the other
+\end{itemize}
+
+We also formulate that the confidence interval, we have $\alpha = 0.05$, for $\theta_1-\theta_2$always takes the form of:
+\begin{equation}
+\bar Y_1-\bar Y_2\pm t_{\alpha/2}(\bar Y_1-\bar Y_2)
+\end{equation}
+Different and independent random number streams are used to simulate the two systems. All observations of simulated system 1 are statistically independent of all the observations of simulated system 2.\\
+The variance of the sample mean is:
+\begin{equation}
+V(\bar Y_i) = \frac{V(Y_i)}{R_i}=\frac {\delta _i ^2}{R_i}
+\end{equation}
+For independent samples:
+\begin{equation}
+V(\bar Y_1-\bar Y_2) = \frac {\delta _1 ^2}{R_1}+\frac {\delta _2 ^2}{R_2}
+\end{equation}
+Here we have model 2 do the same number of replications we don't need to do verification. I just list all statics I got below.
 
 
 
-
-
-
- We declare how to compare performance of two models here. 
-
-
-
-The purpose is to compare alternative system designs. The method of comparing is replications is used to analyze the output data.
 
 \end{document}
