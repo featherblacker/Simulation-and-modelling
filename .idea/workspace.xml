@@ -2,8 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1899ee4f-cbad-4932-81e5-a3bd478a0151" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Part 4/Generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Project.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Real data/servinsp1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Real data/servinsp22.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Real data/servinsp23.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Real data/ws1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Real data/ws2.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Real data/ws3.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 1/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 1/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 1/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 1/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 1/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 1/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 10/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 10/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 10/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 10/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 10/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 10/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 2/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 2/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 2/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 2/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 2/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 2/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 3/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 3/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 3/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 3/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 3/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 3/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 4/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 4/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 4/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 4/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 4/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 4/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 5/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 5/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 5/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 5/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 5/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 5/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 6/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 6/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 6/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 6/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 6/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 6/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 7/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 7/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 7/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 7/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 7/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 7/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 8/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 8/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 8/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 8/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 8/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 8/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 9/sp1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 9/sp2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 9/sp3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 9/ws1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 9/ws2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/Replication 9/ws3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part 4/format.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part 3/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Part 3/Project.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Part 4/Project.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Part 4/Project.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,15 +109,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Part 3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Part 4" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Part 4" />
       <recent name="$PROJECT_DIR$/Part 3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Project (1)">
+  <component name="RunManager" selected="Python.Project">
     <configuration name="Project (1)" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -86,7 +155,7 @@
       </texify>
       <method v="2" />
     </configuration>
-    <configuration name="Generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Generator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +163,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Part 3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Part 4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part 3/Generator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part 4/Generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,6 +197,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Project" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Part 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part 4/Project.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,34 +239,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="format" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/opt/anaconda3/envs/python37/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Part 3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part 3/format.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Project" />
+        <item itemvalue="Python.Generator (1)" />
         <item itemvalue="Python.Project (1)" />
         <item itemvalue="LaTeX.Project (1)" />
         <item itemvalue="LaTeX.Project" />
-        <item itemvalue="Python.format" />
-        <item itemvalue="Python.Generator" />
       </list>
     </recent_temporary>
   </component>
@@ -252,41 +321,41 @@
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state x="104" y="100" width="1844" height="952" key="DiffContextDialog/4.0.2044.1152@4.0.2044.1152" timestamp="1585611804698" />
-    <state width="2027" height="271" key="GridCell.Tab.0.bottom" timestamp="1586051506370">
+    <state width="2027" height="223" key="GridCell.Tab.0.bottom" timestamp="1586097581926">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.bottom/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559794" />
     <state width="2027" height="271" key="GridCell.Tab.0.bottom/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686073" />
-    <state width="2027" height="271" key="GridCell.Tab.0.bottom/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747751" />
+    <state width="2027" height="223" key="GridCell.Tab.0.bottom/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1586097581926" />
     <state width="1415" height="135" key="GridCell.Tab.0.bottom/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1586051506370" />
+    <state width="2027" height="223" key="GridCell.Tab.0.bottom/4.0.2044.1152@4.0.2044.1152" timestamp="1586054590446" />
     <state width="2023" height="127" key="GridCell.Tab.0.bottom/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298303" />
-    <state width="2027" height="271" key="GridCell.Tab.0.center" timestamp="1586051506369">
+    <state width="2027" height="223" key="GridCell.Tab.0.center" timestamp="1586097581924">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.center/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559793" />
     <state width="2027" height="271" key="GridCell.Tab.0.center/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686071" />
-    <state width="2027" height="271" key="GridCell.Tab.0.center/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747750" />
+    <state width="2027" height="223" key="GridCell.Tab.0.center/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1586097581924" />
     <state width="1415" height="135" key="GridCell.Tab.0.center/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1586051506369" />
+    <state width="2027" height="223" key="GridCell.Tab.0.center/4.0.2044.1152@4.0.2044.1152" timestamp="1586054590445" />
     <state width="2023" height="127" key="GridCell.Tab.0.center/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2027" height="271" key="GridCell.Tab.0.left" timestamp="1586051506368">
+    <state width="2027" height="223" key="GridCell.Tab.0.left" timestamp="1586097581924">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.left/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559792" />
     <state width="2027" height="271" key="GridCell.Tab.0.left/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686070" />
-    <state width="2027" height="271" key="GridCell.Tab.0.left/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747748" />
+    <state width="2027" height="223" key="GridCell.Tab.0.left/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1586097581924" />
     <state width="1415" height="135" key="GridCell.Tab.0.left/4.0.1436.900@4.0.1436.900" timestamp="1581046580840" />
-    <state width="2027" height="271" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1586051506368" />
+    <state width="2027" height="223" key="GridCell.Tab.0.left/4.0.2044.1152@4.0.2044.1152" timestamp="1586054590444" />
     <state width="2023" height="127" key="GridCell.Tab.0.left/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
-    <state width="2027" height="271" key="GridCell.Tab.0.right" timestamp="1586051506369">
+    <state width="2027" height="223" key="GridCell.Tab.0.right" timestamp="1586097581925">
       <screen x="4" y="0" width="2044" height="1152" />
     </state>
     <state width="2023" height="135" key="GridCell.Tab.0.right/2048.0.1440.900/4.0.2044.1152@4.0.2044.1152" timestamp="1585405559794" />
     <state width="2027" height="271" key="GridCell.Tab.0.right/359.1152.1432.1074/4.0.2044.1152@4.0.2044.1152" timestamp="1585806686072" />
-    <state width="2027" height="271" key="GridCell.Tab.0.right/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1585806747750" />
+    <state width="2027" height="223" key="GridCell.Tab.0.right/359.1175.1432.1051/4.0.2044.1152@4.0.2044.1152" timestamp="1586097581925" />
     <state width="1415" height="135" key="GridCell.Tab.0.right/4.0.1436.900@4.0.1436.900" timestamp="1581046580841" />
-    <state width="2027" height="271" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1586051506369" />
+    <state width="2027" height="223" key="GridCell.Tab.0.right/4.0.2044.1152@4.0.2044.1152" timestamp="1586054590446" />
     <state width="2023" height="127" key="GridCell.Tab.0.right/4.23.2044.1129@4.23.2044.1129" timestamp="1580881298302" />
     <state width="2027" height="262" key="GridCell.Tab.1.bottom" timestamp="1585834701953">
       <screen x="4" y="0" width="2044" height="1152" />
